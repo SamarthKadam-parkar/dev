@@ -1,0 +1,3 @@
+# Force Jupytext to respect and carry over all complex platform-specific notebook metadata
+notebook_metadata_filter = "all"
+cell_metadata_filter = "all"

@@ -1,7 +1,24 @@
+# ---
+# jupyter:
+#   jupytext:
+#     cell_metadata_filter: all
+#     notebook_metadata_filter: all
+#     text_representation:
+#       extension: .py
+#       format_name: percent
+#       format_version: '1.3'
+#       jupytext_version: 1.19.2
+#   language_info:
+#     name: python
+# ---
+
+# %% [markdown]
 # Fabric notebook source
 
+# %% [markdown]
 # METADATA ********************
 
+# %% [markdown]
 # META {
 # META   "kernel_info": {
 # META     "name": "synapse_pyspark"
@@ -20,17 +37,28 @@
 # META   }
 # META }
 
+# %% [markdown]
 # MARKDOWN ********************
 
+# %% [markdown]
 # ## Bronze tables creation
 
+# %% [markdown]
 # CELL ********************
 
+# %%
 from pyspark.sql import functions as F
 
+# %% [markdown]
 # METADATA ********************
 
+# %% [markdown]
 # META {
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# %%
+a = 1 
+b = 2 
+print(a//b)
