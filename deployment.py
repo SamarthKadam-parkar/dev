@@ -6,7 +6,6 @@ Publishes repository artifacts into a target Fabric workspace.
 
 import os
 import logging
-# from auth import TENANT_ID, CLIENT_ID, CLIENT_SECRET, WORKSPACE_ID
 from fabric_cicd import FabricWorkspace, publish_all_items, unpublish_all_orphan_items
 from dotenv import load_dotenv
 from azure.identity import ClientSecretCredential

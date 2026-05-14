@@ -1,7 +1,10 @@
+# %% [markdown]
 # Fabric notebook source
 
+# %% [markdown]
 # METADATA ********************
 
+# %% [markdown]
 # META {
 # META   "dependencies": {
 # META     "lakehouse": {
@@ -17,21 +20,39 @@
 # META   }
 # META }
 
+# %% [markdown]
 # MARKDOWN ********************
 
+# %% [markdown]
 # ## Bronze tables creation
 
+# %% [markdown]
 # CELL ********************
 
+# %%
 from pyspark.sql import functions as F
 
+# %% [markdown]
 # METADATA ********************
 
+# %% [markdown]
 # META {
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
 
+# %% [markdown]
 # CELL ********************
+# - **Fabric cicd**
+# \n
+# | Column | Type | Nullable | Notes |
+# |--------|------|----------|-------|
+# | ListSelectionID | INT | NOT NULL | PK |
+# | ItemID | INT | NOT NULL | FK → Person.PersonID or Job.JobID |
+# | Type | INT | NOT NULL | |
+# | ListID | INT | NOT NULL | List definition |
+# | NodeID | INT | NOT NULL | Selected node |
 
-print('hello')
+
+# %%
+print('hello world!!')
