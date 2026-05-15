@@ -35,13 +35,32 @@ from pyspark.sql import functions as F
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# MARKDOWN ********************
+# CELL ********************
 
-# Making some changes from the feature workspace this should be visible on in feature workspace.
+TARGET_LAKEHOUSE = "bronze"
+TARGET_TABLE = "sales"
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
 
 # CELL ********************
 
-a = True
+sales = spark.read.format('csv').option("header","true").option("inferschema","true").load("abfss://feature@onelake.dfs.fabric.microsoft.com/raw.Lakehouse/Files/sales.csv")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+sales.write.format('delta').saveAsTable(f"{TARGET_LAKEHOUSE}.{TARGET_TABLE}")
 
 # METADATA ********************
 
