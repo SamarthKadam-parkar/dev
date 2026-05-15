@@ -25,3 +25,18 @@ TAEGET_LAKEHOUSE = "silver"
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# MARKDOWN ********************
+
+# made this change from vs code
+
+# CELL ********************
+
+print("hello")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
