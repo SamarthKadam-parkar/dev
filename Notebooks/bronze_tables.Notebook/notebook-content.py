@@ -34,37 +34,3 @@ from pyspark.sql import functions as F
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
-
-# CELL ********************
-
-TARGET_LAKEHOUSE = "bronze"
-TARGET_TABLE = "sales"
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
-sales = spark.read.format('csv').option("header","true").option("inferschema","true").load("abfss://feature@onelake.dfs.fabric.microsoft.com/raw.Lakehouse/Files/sales.csv")
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
-sales.write.format('delta').saveAsTable(f"{TARGET_LAKEHOUSE}.{TARGET_TABLE}")
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
