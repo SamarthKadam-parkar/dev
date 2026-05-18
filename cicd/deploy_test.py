@@ -15,7 +15,7 @@ credential = ClientSecretCredential(
    client_secret=CLIENT_SECRET
 )
 target_workspace = FabricWorkspace(
-   workspace_id=WORKSPACE_ID,
+   workspace_id=TEST_WORKSPACE_ID,
    repository_directory="./",
    item_type_in_scope=[
        "Notebook",
