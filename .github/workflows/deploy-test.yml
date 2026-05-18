@@ -19,9 +19,9 @@ jobs:
          pip install azure-identity
      - name: Deploy to Test Workspace
        env:
-         FABRIC_CLIENT_ID: ${{ secrets.CLIENT_ID }}
-         FABRIC_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-         FABRIC_TENANT_ID: ${{ secrets.TENANT_ID }}
-         FABRIC_TEST_WORKSPACE: ${{ secrets.TEST_WORKSPACE_ID }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          TENANT_ID: ${{ secrets.TENANT_ID }}
+          TEST_WORKSPACE: ${{ secrets.TEST_WORKSPACE_ID }}
        run: |
          python cicd/deploy_test.py
