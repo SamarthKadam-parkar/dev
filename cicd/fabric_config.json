@@ -1,0 +1,7 @@
+{
+    "workspaces": {
+        "dev":"dev",
+        "test":"test_w",
+        "prod": "prod" 
+    }
+}
