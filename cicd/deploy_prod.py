@@ -4,10 +4,10 @@ from fabric_cicd import (
    FabricWorkspace,
    publish_all_items
 )
-TENANT_ID = os.getenv("FABRIC_TENANT_ID")
-CLIENT_ID = os.getenv("FABRIC_CLIENT_ID")
-CLIENT_SECRET = os.getenv("FABRIC_CLIENT_SECRET")
-WORKSPACE_ID = os.getenv("FABRIC_PROD_WORKSPACE_ID")
+TENANT_ID = os.getenv("TENANT_ID")
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+WORKSPACE_ID = os.getenv("PROD_WORKSPACE_ID")
 credential = ClientSecretCredential(
    tenant_id=TENANT_ID,
    client_id=CLIENT_ID,
