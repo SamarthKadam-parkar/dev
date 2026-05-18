@@ -1,0 +1,7 @@
+find_replace:
+
+  - find_value: ${{ DEV_WORKSPACE_ID }} 
+    replace_value:
+      dev: ${{ DEV_WORKSPACE_ID }}      
+      prod: ${{ PROD_WORKSPACE_ID }}    
+    item_type: "Notebook"
