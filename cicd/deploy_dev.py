@@ -6,6 +6,8 @@ from fabric_cicd import (
    unpublish_all_orphan_items,
    change_log_level
 )
+from dotenv import load_dotenv
+load_dotenv()
 
 TENANT_ID = os.getenv("TENANT_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
