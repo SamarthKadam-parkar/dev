@@ -16,7 +16,6 @@ jobs:
      - name: Install Packages
        run: |
          pip install fabric-cicd
-         pip install dotenv
          pip install azure-identity
      - name: Deploy to DEV
        env:
