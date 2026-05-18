@@ -1,13 +1,12 @@
 import os
 from azure.identity import ClientSecretCredential
-from dotenv import load_dotenv
 from fabric_cicd import (
    FabricWorkspace,
    publish_all_items,
    unpublish_all_orphan_items,
    change_log_level
 )
-load_dotenv()
+
 TENANT_ID = os.getenv("TENANT_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
