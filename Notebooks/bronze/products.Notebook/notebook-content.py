@@ -20,15 +20,9 @@
 # META   }
 # META }
 
-# MARKDOWN ********************
-
-# ## **Pre-processing of sales table**
-
-
 # CELL ********************
 
-TARGET_TABLE = "sales"
-TAEGET_LAKEHOUSE = "silver" 
+from pyspark.sql import functions as F
 
 # METADATA ********************
 
@@ -37,22 +31,24 @@ TAEGET_LAKEHOUSE = "silver"
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# MARKDOWN ********************
+# CELL ********************
 
-# made this change from vs code
+products = spark.read.format('csv').option('header','true').option('inferschema','true').load('Files/products.csv')
 
-# MARKDOWN ********************
+# METADATA ********************
 
-# Test - making changes in silver_notebook on 18th may 2026
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
 
-# MARKDOWN ********************
+# CELL ********************
 
-# Test - This markdown has been added from feature_26.5.3 branch
+products.write.format('delta').saveAsTable('bronze.products')
 
-# MARKDOWN ********************
+# METADATA ********************
 
-# Test - markdown added at 15:56
-
-# MARKDOWN ********************
-
-# Test - markdown added at 16:49
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
