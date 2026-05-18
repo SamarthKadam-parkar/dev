@@ -1,0 +1,42 @@
+# Fabric notebook source
+
+# METADATA ********************
+
+# META {
+# META   "kernel_info": {
+# META     "name": "synapse_pyspark"
+# META   },
+# META   "dependencies": {}
+# META }
+
+# MARKDOWN ********************
+
+# ## **Pre-processing of sales table**
+
+
+# CELL ********************
+
+TARGET_TABLE = "sales"
+TAEGET_LAKEHOUSE = "silver" 
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# MARKDOWN ********************
+
+# made this change from vs code
+
+# CELL ********************
+
+print("hello")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }

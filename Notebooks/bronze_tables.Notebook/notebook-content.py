@@ -34,18 +34,3 @@ from pyspark.sql import functions as F
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
-
-# MARKDOWN ********************
-
-# Making some changes from the feature workspace this should be visible on in feature workspace.
-
-# CELL ********************
-
-a = True
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }

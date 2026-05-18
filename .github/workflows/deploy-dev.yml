@@ -1,0 +1,27 @@
+name: Deploy to Dev
+on:
+ push:
+   branches:
+     - dev
+jobs:
+ deploy-dev:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout
+       uses: actions/checkout@v4
+     - name: Setup Python
+       uses: actions/setup-python@v5
+       with:
+         python-version: "3.11"
+     - name: Install Packages
+       run: |
+         pip install fabric-cicd
+         pip install azure-identity
+     - name: Deploy to DEV
+       env:
+         FABRIC_CLIENT_ID: ${{ secrets.CLIENT_ID }}
+         FABRIC_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+         FABRIC_TENANT_ID: ${{ secrets.TENANT_ID }}
+         FABRIC_DEV_WORKSPACE: ${{ secrets.DEV_WORKSPACE_ID }}
+       run: |
+         python cicd/deploy_dev.py

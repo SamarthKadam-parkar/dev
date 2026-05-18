@@ -1,0 +1,26 @@
+name: Deploy to Test Workspace
+on:
+ push:
+   branches:
+     - main
+jobs:
+ deploy-test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout Repository
+       uses: actions/checkout@v4
+     - name: Setup Python
+       uses: actions/setup-python@v5
+       with:
+         python-version: '3.11'
+     - name: Install Dependencies
+       run: |
+         pip install -r requirements.txt
+     - name: Deploy to Test Workspace
+       env:
+         FABRIC_CLIENT_ID: ${{ secrets.CLIENT_ID }}
+         FABRIC_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+         FABRIC_TENANT_ID: ${{ secrets.TENANT_ID }}
+         FABRIC_TEST_WORKSPACE: ${{ secrets.TEST_WORKSPACE_ID }}
+       run: |
+         python cicd/deploy_test.py
