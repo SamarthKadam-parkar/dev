@@ -22,7 +22,7 @@
 
 # MARKDOWN ********************
 
-# ## **Pre-processing of sales table**
+# ## **Pre-processing and cleaning products table**
 
 
 # CELL ********************
@@ -49,34 +49,12 @@ products = spark.read.table("bronze.products")
 
 # CELL ********************
 
-display(products)
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
 products = products.select(
-    F.col("ProductID"),
-    F.col("ProductName"),
-    F.col("Category"),
-    F.col("Price").alias("PRICE"),
+    F.col("ProductID").alias("PRODUCT_ID"),
+    F.col("ProductName").alias("PRODUCT_NAME"),
+    F.col("Category").alias("CATEGORY"),
+    F.col("Price").alias("PRICE")
 )
-display(products)
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
 
 # METADATA ********************
 
