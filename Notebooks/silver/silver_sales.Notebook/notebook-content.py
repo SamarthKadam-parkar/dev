@@ -63,17 +63,6 @@ products = products.select(
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# CELL ********************
-
-print("hello world")
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
 # MARKDOWN ********************
 
-# markdown added
+# markdown added on 20th may 2026
