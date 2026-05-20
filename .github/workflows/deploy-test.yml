@@ -2,7 +2,7 @@ name: Deploy to Test Workspace
 on:
  push:
    branches:
-     - main
+     - 'dev'
 jobs:
  deploy-test:
    runs-on: ubuntu-latest
