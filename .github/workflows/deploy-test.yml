@@ -15,7 +15,8 @@ jobs:
          python-version: '3.11'
      - name: Install Dependencies
        run: |
-         pip install -r requirements.txt
+         pip install fabric-cicd
+         pip install azure-identity
      - name: Deploy to Test Workspace
        env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
