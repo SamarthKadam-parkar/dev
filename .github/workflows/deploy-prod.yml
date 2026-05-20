@@ -25,7 +25,7 @@ jobs:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           TENANT_ID: ${{ secrets.TENANT_ID }}
-          PROD_DEV_WORKSPACE: ${{ secrets.PROD_WORKSPACE_ID }}
+          PROD_WORKSPACE_ID: ${{ secrets.PROD_WORKSPACE_ID }}
         run: |
           python cicd/deploy_prod.py
  
