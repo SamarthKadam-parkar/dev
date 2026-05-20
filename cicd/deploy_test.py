@@ -27,9 +27,5 @@ target_workspace = FabricWorkspace(
    token_credential=credential
 )
 publish_all_items(target_workspace)
-<<<<<<< HEAD
-unpublish_all_orphan_items(target_workspace)
-=======
 # unpublish_all_orphan_items(target_workspace)
->>>>>>> main
 print("Deployment to TEST completed successfully")
