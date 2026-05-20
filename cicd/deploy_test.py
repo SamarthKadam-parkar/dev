@@ -8,14 +8,14 @@ from fabric_cicd import (
 TENANT_ID = os.getenv("TENANT_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-PROD_WORKSPACE_ID = os.getenv("PROD_WORKSPACE_ID")
+TEST_WORKSPACE_ID = os.getenv("TEST_WORKSPACE_ID")
 credential = ClientSecretCredential(
    tenant_id=TENANT_ID,
    client_id=CLIENT_ID,
    client_secret=CLIENT_SECRET
 )
 target_workspace = FabricWorkspace(
-   workspace_id=PROD_WORKSPACE_ID,
+   workspace_id=TEST_WORKSPACE_ID,
    repository_directory="./",
    item_type_in_scope=[
        "Notebook",
