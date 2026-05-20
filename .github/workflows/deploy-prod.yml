@@ -20,7 +20,6 @@ jobs:
         run: |
           pip install fabric-cicd
           pip install azure-identity
-          pip install -r requirements.txt
       - name: Deploy to Prod Workspace
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
