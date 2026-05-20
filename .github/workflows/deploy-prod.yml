@@ -1,6 +1,8 @@
 name: Deploy to Prod Workspace
 on:
-  workflow_dispatch:
+  push: 
+    branches:
+      'main'
 
 jobs:
   deploy-prod:
@@ -16,13 +18,15 @@ jobs:
           python-version: '3.11'
       - name: Install Dependencies
         run: |
+          pip install fabric-cicd
+          pip install azure-identity
           pip install -r requirements.txt
       - name: Deploy to Prod Workspace
         env:
-          FABRIC_CLIENT_ID: ${{ secrets.CLIENT_ID }}
-          FABRIC_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          FABRIC_TENANT_ID: ${{ secrets.TENANT_ID }}
-          FABRIC_DEV_WORKSPACE: ${{ secrets.PROD_WORKSPACE_ID }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          TENANT_ID: ${{ secrets.TENANT_ID }}
+          PROD_DEV_WORKSPACE: ${{ secrets.PROD_WORKSPACE_ID }}
         run: |
           python cicd/deploy_prod.py
  
