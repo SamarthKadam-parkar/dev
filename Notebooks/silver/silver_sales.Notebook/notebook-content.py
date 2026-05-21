@@ -38,6 +38,18 @@ from pyspark.sql import functions as F
 
 # CELL ********************
 
+TARGET_TABLE = 'products'
+TARGET_SCHEMA = 'silver'
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 products = spark.read.table("bronze.products")
 
 # METADATA ********************
@@ -49,12 +61,15 @@ products = spark.read.table("bronze.products")
 
 # CELL ********************
 
-products = products.select(
-    F.col("ProductID").alias("PRODUCT_ID"),
-    F.col("ProductName").alias("PRODUCT_NAME"),
-    F.col("Category").alias("CATEGORY"),
-    F.col("Price").alias("PRICE")
-)
+products = (products
+.withColumn("PRODUCT_NAME",F.upper(F.col("PRODUCT_NAME")))
+.withColumn("CATEGORY",F.upper(F.col("CATEGORY")))
+.select(
+    F.col("PRODUCT_ID"),
+    F.col("PRODUCT_NAME"),
+    F.col("CATEGORY"),
+    F.col("PRICE")
+))
 
 # METADATA ********************
 
@@ -63,6 +78,15 @@ products = products.select(
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# MARKDOWN ********************
+# CELL ********************
 
-# markdown added on 20th may 2026
+products.write\
+.format('delta')\
+.saveAsTable(f"{TARGET_SCHEMA}.{TARGET_TABLE}")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
