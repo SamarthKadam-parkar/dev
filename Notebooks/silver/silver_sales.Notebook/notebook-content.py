@@ -95,3 +95,7 @@ products.write\
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
