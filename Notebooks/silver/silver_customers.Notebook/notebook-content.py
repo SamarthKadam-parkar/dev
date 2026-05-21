@@ -11,8 +11,7 @@
 
 # CELL ********************
 
-# Welcome to your new notebook
-# Type here in the cell editor to add code!
+from pyspark.sql import functions as F
 
 
 # METADATA ********************
