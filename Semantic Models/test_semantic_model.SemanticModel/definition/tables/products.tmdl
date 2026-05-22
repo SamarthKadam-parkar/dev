@@ -1,0 +1,48 @@
+table products
+	lineageTag: 2ad2322f-9842-49a0-a162-55097aef40cd
+	sourceLineageTag: [dbo].[products]
+
+	column ProductID
+		dataType: string
+		lineageTag: cf6e79ce-74bb-408a-bb9c-9dd137eb1cbc
+		sourceLineageTag: ProductID
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: bb2ba7de-01ac-4ef0-b890-f9e8fd0b9a5c
+		sourceLineageTag: ProductName
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: bdd54119-a81b-402a-9271-9ee6ef8af18f
+		sourceLineageTag: Category
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: double
+		lineageTag: 8eb1d730-4b90-426f-bed7-c4b7fb061bec
+		sourceLineageTag: Price
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition products = entity
+		mode: directLake
+		source
+			entityName: products
+			expressionSource: 'DirectLake - bronze'
+
