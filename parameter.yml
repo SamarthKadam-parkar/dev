@@ -1,0 +1,32 @@
+# parameters.yml
+
+environments:
+  dev:
+    workspaceId: ${{ DEV_WORKSPACE_ID }}
+
+    raw:
+      id: ${{ DEV_RAW_LAKEHOUSE_ID }}
+      name: "raw"
+      
+    bronze:
+      id: ${{ DEV_BRONZE_LAKEHOUSE_ID}}
+      name: "bronze"
+
+    silver:
+      id: ${{ DEV_SILVER_LAKEHOUSE_ID}}
+      name: "silver"
+
+  test:
+    workspaceId: ${{ TEST_WORKSPACE_ID }}
+
+    raw:
+      id: ${{ TEST_RAW_LAKEHOUSE_ID }}
+      name: "raw"
+
+    bronze:
+      id: ${{ TEST_BRONZE_LAKEHOUSE_ID }}
+      name: "bronze"
+
+    silver:
+      id: ${{ TEST_SILVER_LAKEHOUSE_ID }}
+      name: "silver"
