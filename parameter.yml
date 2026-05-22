@@ -1,0 +1,9 @@
+semantic_model_binding:
+ # fallback/default connection
+ default:
+   connection_id:
+     DEV: "43b924b4-9fb6-43a2-ae5b-28177c0014ee"
+ models:
+   - semantic_model_name: "test_semantic_model"
+     connection_id:
+       DEV: "43b924b4-9fb6-43a2-ae5b-28177c0014ee"
