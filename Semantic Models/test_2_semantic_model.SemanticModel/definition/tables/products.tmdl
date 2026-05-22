@@ -1,10 +1,11 @@
 table products
-	lineageTag: 2ad2322f-9842-49a0-a162-55097aef40cd
+	lineageTag: 44f8a1c5-c177-450a-8b89-ed077220261e
 	sourceLineageTag: [dbo].[products]
 
 	column ProductID
 		dataType: string
-		lineageTag: cf6e79ce-74bb-408a-bb9c-9dd137eb1cbc
+		sourceProviderType: varchar(8000)
+		lineageTag: a0c3e0b2-3592-4e84-b9a1-ab78e2a43d2d
 		sourceLineageTag: ProductID
 		summarizeBy: none
 		sourceColumn: ProductID
@@ -13,7 +14,8 @@ table products
 
 	column ProductName
 		dataType: string
-		lineageTag: bb2ba7de-01ac-4ef0-b890-f9e8fd0b9a5c
+		sourceProviderType: varchar(8000)
+		lineageTag: 3cf0ac88-072b-4e45-bc49-187ec1283452
 		sourceLineageTag: ProductName
 		summarizeBy: none
 		sourceColumn: ProductName
@@ -22,7 +24,8 @@ table products
 
 	column Category
 		dataType: string
-		lineageTag: bdd54119-a81b-402a-9271-9ee6ef8af18f
+		sourceProviderType: varchar(8000)
+		lineageTag: 4142547d-abeb-4d63-b823-d423eeb03fdd
 		sourceLineageTag: Category
 		summarizeBy: none
 		sourceColumn: Category
@@ -31,7 +34,8 @@ table products
 
 	column Price
 		dataType: double
-		lineageTag: 8eb1d730-4b90-426f-bed7-c4b7fb061bec
+		sourceProviderType: float
+		lineageTag: 77b8ea47-c35b-45f2-8655-bd6759eba243
 		sourceLineageTag: Price
 		summarizeBy: sum
 		sourceColumn: Price
@@ -44,5 +48,8 @@ table products
 		mode: directLake
 		source
 			entityName: products
-			expressionSource: 'DirectLake - bronze'
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
 
