@@ -19,7 +19,6 @@ target_workspace = FabricWorkspace(
    item_type_in_scope=[
        "Notebook",
        "DataPipeline",
-       "Lakehouse",
        "SemanticModel",
        "Report"
    ],
