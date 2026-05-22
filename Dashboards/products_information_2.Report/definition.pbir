@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../../Semantic Models/test_semantic_model.SemanticModel"
+      "path": "../../Semantic Models/test_2_semantic_model.SemanticModel"
     }
   }
 }
