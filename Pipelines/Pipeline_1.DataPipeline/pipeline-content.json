@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Lookup",
+        "typeProperties": {
+          "source": {
+            "type": "LakehouseTableSource"
+          },
+          "datasetSettings": {
+            "type": "LakehouseTable",
+            "typeProperties": {
+              "table": "products"
+            },
+            "schema": [],
+            "connectionSettings": {
+              "name": "bronze",
+              "properties": {
+                "type": "Lakehouse",
+                "typeProperties": {
+                  "artifactId": "0d69f42b-91de-87ab-4c0f-f6aa35428bd0",
+                  "workspaceId": "00000000-0000-0000-0000-000000000000",
+                  "rootFolder": "Tables"
+                },
+                "externalReferences": {
+                  "connection": "836f55cc-028f-443b-9b0d-8c6584e9e29e"
+                },
+                "annotations": []
+              }
+            },
+            "annotations": []
+          }
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Lookup1",
+        "dependsOn": []
+      }
+    ]
+  }
+}
