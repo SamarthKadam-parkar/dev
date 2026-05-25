@@ -2,8 +2,8 @@ semantic_model_binding:
  # fallback/default connection
  default:
    connection_id:
-     _ALL_: "80f6f48e-c393-43e1-b65a-1b6212185016"
+     _ALL_: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm"
  models:
    - semantic_model_name: "test_2_semantic_model"
      connection_id:
-       _ALL_: "80f6f48e-c393-43e1-b65a-1b6212185016"
+       _ALL_: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm"
