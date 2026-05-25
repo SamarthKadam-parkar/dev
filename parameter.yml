@@ -1,11 +1,11 @@
 semantic_model_binding:
-     default:
-        connection_id:
-            DEV: "15800538-bc78-4291-a34f-ba8184c23b08"
-            TEST: "6ebb672e-c093-4729-86de-b3e9cde2b7fa           
+  default:
+    connection_id:
+      DEV: "15800538-bc78-4291-a34f-ba8184c23b08"
+      TEST: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
 
 models:
-     - semantic_model_name: "test_2_semantic_model"
-       connection_id:
-            DEV: "15800538-bc78-4291-a34f-ba8184c23b08"
-            TEST: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+  - semantic_model_name: "test_2_semantic_model"
+    connection_id:
+      DEV: "15800538-bc78-4291-a34f-ba8184c23b08"
+      TEST: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
