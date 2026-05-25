@@ -17,6 +17,7 @@ credential = ClientSecretCredential(
 target_workspace = FabricWorkspace(
    workspace_id=TEST_WORKSPACE_ID,
    repository_directory="./",
+   environment="test",
    item_type_in_scope=[
        "Notebook",
        "DataPipeline",
