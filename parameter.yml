@@ -1,9 +1,9 @@
 semantic_model_binding:
-  default:
-    connection_id:
-      _ALL_ : "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
-
-models:
-  - semantic_model_name: "test_2_semantic_model"
-    connection_id:
-      _ALL_ : "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+ # fallback/default connection
+ default:
+   connection_id:
+     _ALL_: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+ models:
+   - semantic_model_name: "products_report"
+     connection_id:
+       _ALL_: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
