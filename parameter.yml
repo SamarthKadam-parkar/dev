@@ -1,9 +1,11 @@
 semantic_model_binding:
- # fallback/default connection
- default:
-   connection_id:
-     _ALL_: "0067e12a-59a9-4ba6-9a62-fee4d00ef2c6"
- models:
-   - semantic_model_name: "products_report"
-     connection_id:
-       _ALL_: "0067e12a-59a9-4ba6-9a62-fee4d00ef2c6"
+    default:
+        connection_id:
+            DEV: ${{ DEV_WORKSPACE_ID }}
+            TEST: ${{ TEST_WORKSPACE_ID }}
+ 
+    models:
+        - semantic_model_name: "test_2_semantic_model"
+          connection_id:
+              DEV: ${{ DEV_WORKSPACE_ID }}
+              TEST: ${{ TEST_WORKSPACE_ID }}
