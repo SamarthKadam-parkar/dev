@@ -1,13 +1,5 @@
 find_replace:
-  - find_value: "Dev.Bronze"
+  - find_value: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
     replace_value:
-      dev: "Dev.Bronze"
-      test: "Test.Bronze"
-  - find_value: "dev.bronze"
-    replace_value:
-      dev: "dev.bronze"
-      test: "test.bronze"
-  - find_value: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm"
-    replace_value:
-      dev: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm"
-      test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i"
+      dev: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
+      test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
