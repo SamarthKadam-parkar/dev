@@ -1,11 +1,9 @@
 semantic_model_binding:
   default:
     connection_id:
-      dev: "15800538-bc78-4291-a34f-ba8184c23b08"
-      test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+      TEST: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
 
 models:
   - semantic_model_name: "test_2_semantic_model"
     connection_id:
-      dev: "15800538-bc78-4291-a34f-ba8184c23b08"
-      test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+      TEST: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
