@@ -1,10 +1,7 @@
-2026-05-14 15:34:11,517 - ERROR - fabric_cicd.fabric_workspace - Either workspace_name or workspace_id must be specified.
-Traceback (most recent call last):
-  File "c:\Users\samarth.kadam\dev\deployment.py", line 56, in <module>
-    main()
-  File "c:\Users\samarth.kadam\dev\deployment.py", line 33, in main
-    workspace = FabricWorkspace(
-                ^^^^^^^^^^^^^^^^
-  File "C:\Users\samarth.kadam\AppData\Local\Programs\Python\Python311\Lib\site-packages\fabric_cicd\fabric_workspace.py", line 123, in __init__
-    raise InputError(msg, logger)
-fabric_cicd._common._exceptions.InputError: Either workspace_name or workspace_id must be specified.
+2026-05-26 13:06:35,700 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
+2026-05-26 13:06:35,775 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-26 13:06:35,775 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-26 13:06:35,775 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
+2026-05-26 13:06:35,775 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-26 13:06:35,775 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-26 13:06:35,786 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
