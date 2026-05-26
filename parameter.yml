@@ -1,9 +1,11 @@
-semantic_model_binding:
- # fallback/default connection
- default:
-   connection_id:
-     _ALL_: "0067e12a-59a9-4ba6-9a62-fee4d00ef2c6"
- models:
-   - semantic_model_name: "products_report"
-     connection_id:
-       _ALL_: "0067e12a-59a9-4ba6-9a62-fee4d00ef2c6"
+find_replace:
+  - find_value: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
+    replace_value:
+      dev: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
+      test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
+      prod:  "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
+  - find_value: "80f6f48e-c393-43e1-b65a-1b6212185016"
+    replace_value:
+      dev: "80f6f48e-c393-43e1-b65a-1b6212185016"
+      test: "9e5d22a7-8e8c-4909-8434-83480debaf41"
+      prod: "b8ab31ce-27ff-4261-bc9f-a49abcfa1b3d"
