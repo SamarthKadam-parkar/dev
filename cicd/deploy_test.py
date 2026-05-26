@@ -31,7 +31,7 @@ target_workspace = FabricWorkspace(
    token_credential=credential
 )
 
-changed = get_changed_items(target_workspace.repository_directory)
+changed = get_changed_items(target_workspace.repository_directory,git_compare_ref="dev")
 if changed:
     publish_all_items(target_workspace,items_to_include=changed)
     print("Deployment to TEST completed successfully")
