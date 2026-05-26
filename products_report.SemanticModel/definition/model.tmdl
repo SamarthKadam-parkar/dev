@@ -8,10 +8,11 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["products.bronze","products_silver"]
+annotation PBI_QueryOrder = ["products.bronze"]
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
 
 ref table 'products.bronze'
-ref table products_silver
 
 ref cultureInfo en-US
 
