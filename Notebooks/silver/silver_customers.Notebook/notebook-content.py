@@ -9,6 +9,10 @@
 # META   "dependencies": {}
 # META }
 
+# MARKDOWN ********************
+
+# ### **Notebook to create customers table in bronze lakehouse**
+
 # CELL ********************
 
 from pyspark.sql import functions as F
