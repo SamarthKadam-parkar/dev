@@ -20,14 +20,14 @@ semantic_model_binding:
   #     # prod: "PROD-BRONZE-CONNECTION-ID"
 
   models:
-    # - semantic_model_name: "test_2_semantic_model"
-    #   connection_id:
-    #     dev: "15800538-bc78-4291-a34f-ba8184c23b08"
-    #     test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+    - semantic_model_name: "products_report"
+      connection_id:
+        dev: "15800538-bc78-4291-a34f-ba8184c23b08"
+        test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
         # prod: "PROD-BRONZE-CONNECTION-ID"
 
-    - semantic_model_name: "products_reports"
-      connection_id:
-        dev: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
-        test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
-        # prod: "PROD-BRONZE-CONNECTION-ID"
+    # - semantic_model_name: "products_reports"
+    #   connection_id:
+    #       dev: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
+    #       test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
+    #     # prod: "PROD-BRONZE-CONNECTION-ID"
