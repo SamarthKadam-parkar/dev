@@ -12,7 +12,7 @@ TEST_WORKSPACE_ID = os.getenv("TEST_WORKSPACE_ID")
 credential = ClientSecretCredential(
    tenant_id=TENANT_ID,
    client_id=CLIENT_ID,
-   client_secret=CLIENT_SECRET
+   client_secret=CLIENT_SECRET,
 )
 target_workspace = FabricWorkspace(
    workspace_id=TEST_WORKSPACE_ID,
@@ -21,9 +21,9 @@ target_workspace = FabricWorkspace(
        "Notebook",
        "DataPipeline",
        "SemanticModel",
-       "Report"
+       "Report",
    ],
-   token_credential=credential
+   token_credential=credential,
 )
 publish_all_items(target_workspace)
 # unpublish_all_orphan_items(target_workspace)
