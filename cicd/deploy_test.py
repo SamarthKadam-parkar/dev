@@ -1,9 +1,6 @@
 import os
 from azure.identity import ClientSecretCredential
 
-from dotenv import load_dotenv
-load_dotenv()
-
 from fabric_cicd import (
    FabricWorkspace,
    publish_all_items,
