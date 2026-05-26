@@ -5,6 +5,10 @@ from fabric_cicd import (
    publish_all_items,
    unpublish_all_orphan_items
 )
+
+from dotenv import load_dotenv
+load_dotenv()
+
 TENANT_ID = os.getenv("TENANT_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
@@ -17,6 +21,7 @@ credential = ClientSecretCredential(
 target_workspace = FabricWorkspace(
    workspace_id=TEST_WORKSPACE_ID,
    repository_directory="./",
+   environment="test",
    item_type_in_scope=[
        "Notebook",
        "DataPipeline",
