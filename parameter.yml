@@ -10,24 +10,24 @@ find_replace:
     replace_value:
       dev: "80f6f48e-c393-43e1-b65a-1b6212185016"
       test: "9e5d22a7-8e8c-4909-8434-83480debaf41"
-      prod: "PROD-BRONZE-DATABASE-ID"
+      # prod: "PROD-BRONZE-DATABASE-ID"
 
 semantic_model_binding:
   default:
     connection_id:
       dev: "15800538-bc78-4291-a34f-ba8184c23b08"
       test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
-      prod: "PROD-BRONZE-CONNECTION-ID"
+      # prod: "PROD-BRONZE-CONNECTION-ID"
 
   models:
     - semantic_model_name: "test_2_semantic_model"
       connection_id:
         dev: "15800538-bc78-4291-a34f-ba8184c23b08"
         test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
-        prod: "PROD-BRONZE-CONNECTION-ID"
+        # prod: "PROD-BRONZE-CONNECTION-ID"
 
     - semantic_model_name: "products_reports"
       connection_id:
-        dev: "15800538-bc78-4291-a34f-ba8184c23b08"
-        test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
-        prod: "PROD-BRONZE-CONNECTION-ID"
+        dev: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
+        test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
+        # prod: "PROD-BRONZE-CONNECTION-ID"
