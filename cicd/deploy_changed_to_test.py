@@ -7,6 +7,8 @@ from fabric_cicd import (
    get_changed_items,
    append_feature_flag,
 )
+from dotenv import load_dotenv
+load_dotenv()
 # ── 1. Required feature flags for selective / changed-only deployment ─────────
 #
 # items_to_include is an experimental feature — both flags are MANDATORY.
