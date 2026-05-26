@@ -1,0 +1,49 @@
+table 'products.bronze'
+	lineageTag: b5281f5f-929c-469f-a735-3c2c71cc4b8c
+
+	column ProductID
+		dataType: string
+		lineageTag: aba22b6d-2aef-429a-a4fb-9d520fe369be
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: 95a7e6ba-9ef8-49ab-bc46-367a4aae1c5a
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 5f077498-3003-42d1-9c1f-e1a140ef4688
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: double
+		lineageTag: d6aa2314-dc8b-42ad-83b8-fb504e9c9704
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'products.bronze' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com", "bronze", [Query="SELECT * FROM products"])
+				in
+				    Source
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

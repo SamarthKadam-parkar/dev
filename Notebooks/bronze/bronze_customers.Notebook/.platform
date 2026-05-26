@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "SemanticModel",
-    "displayName": "products_reports"
+    "type": "Notebook",
+    "displayName": "bronze_customers"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "56eb9cae-b584-9fbf-4b08-90e27cb281b9"
+    "logicalId": "82196dbe-ff48-9713-4199-e0ff0a726d94"
   }
 }
