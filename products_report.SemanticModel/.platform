@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "SemanticModel",
-    "displayName": "products_reports"
+    "displayName": "products_report"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "56eb9cae-b584-9fbf-4b08-90e27cb281b9"
+    "logicalId": "61972465-799f-8c84-4073-9ded0cfa4a79"
   }
 }
