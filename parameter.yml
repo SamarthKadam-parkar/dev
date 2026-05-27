@@ -25,9 +25,9 @@ find_replace:
 
     # ── Connection 2: bronze ────────────────────────────────────────────
 
-    - find_value: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
+    - find_value: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
       replace_value:
-          test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
+          test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
           prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
       item_type: "SemanticModel"
 
