@@ -1,48 +1,38 @@
-2026-05-26 16:56:43,595 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
-2026-05-26 16:56:43,749 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 16:56:43,749 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 16:56:43,749 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
-2026-05-26 16:56:43,749 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 16:56:43,750 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 16:56:43,758 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Publishing Workspace Folders ############################################################[0m
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - Publishing Workspace Folders
-2026-05-26 16:56:47,116 - INFO - fabric_cicd.fabric_workspace - ->Published
-2026-05-26 16:56:56,953 - INFO - fabric_cicd.publish - 
-2026-05-26 16:56:56,953 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:56:56,953 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 10/26: Notebook #########################################################[0m
-2026-05-26 16:56:56,953 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:56:56,953 - INFO - fabric_cicd.publish - 
-2026-05-26 16:56:57,120 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'products'
-2026-05-26 16:56:57,120 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'gold_products'
-2026-05-26 16:56:57,120 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'silver_customers'
-2026-05-26 16:56:57,120 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'silver_products'
-2026-05-26 16:57:02,912 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'silver_products'
-2026-05-26 16:57:03,113 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'products'
-2026-05-26 16:57:03,117 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'silver_customers'
-2026-05-26 16:57:03,219 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'gold_products'
-2026-05-26 16:57:03,219 - INFO - fabric_cicd.publish - 
-2026-05-26 16:57:03,221 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:57:03,221 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 11/26: SemanticModel ####################################################[0m
-2026-05-26 16:57:03,221 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:57:03,221 - INFO - fabric_cicd.publish - 
-2026-05-26 16:57:03,221 - INFO - fabric_cicd.fabric_workspace - Publishing SemanticModel 'test_2_semantic_model'
-2026-05-26 16:57:06,466 - INFO - fabric_cicd.fabric_workspace - ->Published SemanticModel 'test_2_semantic_model'
-2026-05-26 16:57:06,466 - INFO - fabric_cicd.publish - 
-2026-05-26 16:57:06,466 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:57:06,470 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 12/26: Report ###########################################################[0m
-2026-05-26 16:57:06,470 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:57:06,470 - INFO - fabric_cicd.publish - 
-2026-05-26 16:57:06,487 - INFO - fabric_cicd.fabric_workspace - Publishing Report 'products_information_2'
-2026-05-26 16:57:10,186 - INFO - fabric_cicd.fabric_workspace - ->Published Report 'products_information_2'
-2026-05-26 16:57:10,186 - INFO - fabric_cicd.publish - 
-2026-05-26 16:57:10,186 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:57:10,186 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 20/26: DataPipeline #####################################################[0m
-2026-05-26 16:57:10,186 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 16:57:10,186 - INFO - fabric_cicd.publish - 
-2026-05-26 16:57:11,136 - INFO - fabric_cicd.fabric_workspace - Publishing DataPipeline 'Pipeline_1'
-2026-05-26 16:57:14,027 - INFO - fabric_cicd.fabric_workspace - ->Published DataPipeline 'Pipeline_1'
+2026-05-26 15:59:24,361 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
+2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
+2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:24,432 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-26 15:59:24,436 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
+2026-05-26 15:59:26,971 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-26 15:59:26,972 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:26,972 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Publishing Workspace Folders ############################################################[0m
+2026-05-26 15:59:26,973 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:26,973 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-26 15:59:26,973 - INFO - fabric_cicd.fabric_workspace - Publishing Workspace Folders
+2026-05-26 15:59:26,974 - INFO - fabric_cicd.fabric_workspace - ->Published
+2026-05-26 15:59:34,650 - WARNING - fabric_cicd._common._validate_input - Selective deployment is enabled.
+2026-05-26 15:59:34,651 - WARNING - fabric_cicd._common._validate_input - Using items_to_include is risky as it can prevent needed dependencies from being deployment.  Use at your own risk.
+2026-05-26 15:59:34,651 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:34,651 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:34,652 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 10/26: Notebook #########################################################[0m
+2026-05-26 15:59:34,652 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:34,652 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:34,729 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'silver_customers'
+2026-05-26 15:59:39,595 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'silver_customers'
+2026-05-26 15:59:39,597 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:39,597 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 11/26: SemanticModel ####################################################[0m
+2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 12/26: Report ###########################################################[0m
+2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - 
+2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 20/26: DataPipeline #####################################################[0m
+2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-26 15:59:39,601 - INFO - fabric_cicd.publish - 
