@@ -36,9 +36,9 @@ find_replace:
           # prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
       item_type: "SemanticModel"
 
-    - find_value: "Dev.Bronze(onelake)"
+    - find_value: "15800538-bc78-4291-a34f-ba8184c23b08"
       replace_value:
-          test: "Test.Bronze(onelake)"
+          test: "26406b47-2502-4f42-9c74-96d46a277e54"
           # prod: "Prod.Bronze"
       item_type: "SemanticModel"
 
