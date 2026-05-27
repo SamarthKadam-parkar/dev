@@ -33,6 +33,7 @@ find_replace:
 
     - find_value: "69a0f054-0d00-47b9-b843-df1c146f4604" #Dev.Bronze
       replace_value:
+          dev: "69a0f054-0d00-47b9-b843-df1c146f4604"
           test: "26406b47-2502-4f42-9c74-96d46a277e54" #Test.Bronze
           prod: "Prod.Bronze"
       item_type: "SemanticModel"
