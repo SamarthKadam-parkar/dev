@@ -2,6 +2,13 @@ table products
 	lineageTag: 44f8a1c5-c177-450a-8b89-ed077220261e
 	sourceLineageTag: [dbo].[products]
 
+	measure 'Total Price' = SUM(products[Price])
+		lineageTag: 082ba871-ad0d-4fcf-9782-e354e480ff5b
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column ProductID
 		dataType: string
 		sourceProviderType: varchar(8000)
