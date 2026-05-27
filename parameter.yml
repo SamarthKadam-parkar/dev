@@ -31,9 +31,9 @@ find_replace:
           prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
       item_type: "SemanticModel"
 
-    - find_value: "Dev.Bronze"
+    - find_value: "69a0f054-0d00-47b9-b843-df1c146f4604" #Dev.Bronze
       replace_value:
-          test: "Test.Bronze"
+          test: "26406b47-2502-4f42-9c74-96d46a277e54" #Test.Bronze
           prod: "Prod.Bronze"
       item_type: "SemanticModel"
 
