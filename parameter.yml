@@ -1,33 +1,31 @@
 find_replace:
 
-    # ── Connection 1: LH_Sales ────────────────────────────────────────────────
-    # products table, orders table — sourced from the Sales Lakehouse
+    # ── Connection 1: Silver ────────────────────────────────────────────────
 
     - find_value: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
       replace_value:
           test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
-          # prod: "prod-sales-endpoint.datawarehouse.fabric.microsoft.com"
+          prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
       item_type: "SemanticModel"
 
     - find_value: "Dev.Silver"
       replace_value:
           test: "Test.Silver"
-          # prod: "LH_Sales_prod"
+          prod: "Prod.Silver"
       item_type: "SemanticModel"
 
-    # ── Connection 2: LH_Reference ────────────────────────────────────────────
-    # dim_product_category, dim_region — sourced from the Reference Lakehouse
+    # ── Connection 2: bronze ────────────────────────────────────────────
 
     - find_value: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
       replace_value:
           test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
-          # prod: "prod-reference-endpoint.datawarehouse.fabric.microsoft.com"
+          prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
       item_type: "SemanticModel"
 
     - find_value: "Dev.Bronze"
       replace_value:
           test: "Test.Bronze"
-          # prod: "LH_Reference_prod"
+          prod: "Prod.Bronze"
       item_type: "SemanticModel"
 
 
@@ -38,5 +36,5 @@ find_replace:
     - find_value: "fd090d74-08b5-4348-89a8-15d1280f84b3"
       replace_value:
           test: "b87e00d4-471f-4799-be95-2a0283f056d2"
-          # prod: "$workspace.$id"
+          prod: "a5db9fee-bc76-4409-8f04-0e326aaee82d"
       item_type: "SemanticModel"
