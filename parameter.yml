@@ -29,13 +29,6 @@ find_replace:
       item_type: "SemanticModel"
 
       # ── Connection 3: bronze (Onelake) ────────────────────────────────────────────
-
-    - find_value: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
-      replace_value:
-          test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
-          # prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
-      item_type: "SemanticModel"
-
     - find_value: "15800538-bc78-4291-a34f-ba8184c23b08"
       replace_value:
           test: "26406b47-2502-4f42-9c74-96d46a277e54"
