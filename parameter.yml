@@ -42,7 +42,6 @@ find_replace:
           # prod: "Prod.Bronze"
       item_type: "SemanticModel"
 
-
     # ── Workspace ID embedded in datasource section ───────────────────────────
     # model.bim in import mode sometimes stores the workspace GUID inside the
     # datasource address or as a parameter expression. Replace it universally.
