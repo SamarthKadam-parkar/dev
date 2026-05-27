@@ -1,4 +1,13 @@
 find_replace:
+    # ── Workspace ID embedded in datasource section ───────────────────────────
+    # model.bim in import mode sometimes stores the workspace GUID inside the
+    # datasource address or as a parameter expression. Replace it universally.
+
+    - find_value: "fd090d74-08b5-4348-89a8-15d1280f84b3"
+      replace_value:
+          test: "b87e00d4-471f-4799-be95-2a0283f056d2"
+          prod: "a5db9fee-bc76-4409-8f04-0e326aaee82d"
+      item_type: "SemanticModel"
 
     # ── Connection 1: Silver ────────────────────────────────────────────────
 
@@ -36,19 +45,10 @@ find_replace:
           # prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
       item_type: "SemanticModel"
 
-    - find_value: "15800538-bc78-4291-a34f-ba8184c23b08"
+    - find_value: "80f6f48e-c393-43e1-b65a-1b6212185016"
       replace_value:
-          test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
+          test: "9e5d22a7-8e8c-4909-8434-83480debaf41"
           # prod: "Prod.Bronze"
       item_type: "SemanticModel"
 
-    # ── Workspace ID embedded in datasource section ───────────────────────────
-    # model.bim in import mode sometimes stores the workspace GUID inside the
-    # datasource address or as a parameter expression. Replace it universally.
-
-    - find_value: "fd090d74-08b5-4348-89a8-15d1280f84b3"
-      replace_value:
-          test: "b87e00d4-471f-4799-be95-2a0283f056d2"
-          prod: "a5db9fee-bc76-4409-8f04-0e326aaee82d"
-      item_type: "SemanticModel"
   
