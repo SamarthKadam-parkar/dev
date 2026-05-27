@@ -1,0 +1,6 @@
+relationship AutoDetected_fd54451e-a4e8-4aca-9355-afaf456d93a4
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: products_silver.PRODUCT_ID
+	toColumn: 'products.bronze'.ProductID
+
