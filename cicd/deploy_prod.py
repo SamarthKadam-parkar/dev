@@ -30,5 +30,5 @@ target_workspace = FabricWorkspace(
 )
 
 
-publish_all_items(target_workspace,items_to_include=changed)
+publish_all_items(target_workspace)
 print("Deployment to PROD completed successfully")
