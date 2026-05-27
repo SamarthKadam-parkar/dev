@@ -1,33 +1,42 @@
-# find_replace:
-#   # Connection 1: Dev.Bronze (endpoint + database)
-#   - find_value: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
-#     replace_value:
-#       dev: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
-#       test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
-#       prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
+find_replace:
 
-#   - find_value: "80f6f48e-c393-43e1-b65a-1b6212185016"
-#     replace_value:
-#       dev: "80f6f48e-c393-43e1-b65a-1b6212185016"
-#       test: "9e5d22a7-8e8c-4909-8434-83480debaf41"
-#       # prod: "PROD-BRONZE-DATABASE-ID"
+    # ── Connection 1: LH_Sales ────────────────────────────────────────────────
+    # products table, orders table — sourced from the Sales Lakehouse
 
-semantic_model_binding:
-  # default:
-  #   connection_id:
-  #     dev: "15800538-bc78-4291-a34f-ba8184c23b08"
-  #     test: "6ebb672e-c093-4729-86de-b3e9cde2b7fa"
-  #     # prod: "PROD-BRONZE-CONNECTION-ID"
+    - find_value: "7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com"
+      replace_value:
+          test: "7DWQCVPHK3CUPDG6UP4H7YPMBU-2QAH5OA7I6MUPPUVFIBIH4CW2I.datawarehouse.fabric.microsoft.com"
+          # prod: "prod-sales-endpoint.datawarehouse.fabric.microsoft.com"
+      item_type: "SemanticModel"
 
-  models:
-    - semantic_model_name: "products_report"
-      connection_id:
-        dev: "69a0f054-0d00-47b9-b843-df1c146f4604"
-        test: "26406b47-2502-4f42-9c74-96d46a277e54"
-        # prod: "PROD-BRONZE-CONNECTION-ID"
+    - find_value: "Dev.Silver"
+      replace_value:
+          test: "Test.Silver"
+          # prod: "LH_Sales_prod"
+      item_type: "SemanticModel"
 
-    # - semantic_model_name: "products_reports"
-    #   connection_id:
-    #       dev: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
-    #       test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
-    #     # prod: "PROD-BRONZE-CONNECTION-ID"
+    # ── Connection 2: LH_Reference ────────────────────────────────────────────
+    # dim_product_category, dim_region — sourced from the Reference Lakehouse
+
+    - find_value: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
+      replace_value:
+          test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
+          # prod: "prod-reference-endpoint.datawarehouse.fabric.microsoft.com"
+      item_type: "SemanticModel"
+
+    - find_value: "Dev.Bronze"
+      replace_value:
+          test: "Test.Bronze"
+          # prod: "LH_Reference_prod"
+      item_type: "SemanticModel"
+
+
+    # ── Workspace ID embedded in datasource section ───────────────────────────
+    # model.bim in import mode sometimes stores the workspace GUID inside the
+    # datasource address or as a parameter expression. Replace it universally.
+
+    - find_value: "fd090d74-08b5-4348-89a8-15d1280f84b3"
+      replace_value:
+          test: "b87e00d4-471f-4799-be95-2a0283f056d2"
+          # prod: "$workspace.$id"
+      item_type: "SemanticModel"
