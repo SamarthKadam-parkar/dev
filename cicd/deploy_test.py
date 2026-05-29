@@ -24,6 +24,8 @@ target_workspace = FabricWorkspace(
        "DataPipeline",
        "SemanticModel",
        "Report",
+       "ApacheAirflowJob",
+       "GraphQLApi"
    ],
    token_credential=credential,
 )
