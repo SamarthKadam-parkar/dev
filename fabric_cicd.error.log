@@ -1,38 +1,38 @@
-2026-05-26 15:59:24,361 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
-2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
-2026-05-26 15:59:24,431 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:24,432 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 15:59:24,436 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
-2026-05-26 15:59:26,971 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 15:59:26,972 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:26,972 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Publishing Workspace Folders ############################################################[0m
-2026-05-26 15:59:26,973 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:26,973 - INFO - fabric_cicd.fabric_workspace - 
-2026-05-26 15:59:26,973 - INFO - fabric_cicd.fabric_workspace - Publishing Workspace Folders
-2026-05-26 15:59:26,974 - INFO - fabric_cicd.fabric_workspace - ->Published
-2026-05-26 15:59:34,650 - WARNING - fabric_cicd._common._validate_input - Selective deployment is enabled.
-2026-05-26 15:59:34,651 - WARNING - fabric_cicd._common._validate_input - Using items_to_include is risky as it can prevent needed dependencies from being deployment.  Use at your own risk.
-2026-05-26 15:59:34,651 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:34,651 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:34,652 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 10/26: Notebook #########################################################[0m
-2026-05-26 15:59:34,652 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:34,652 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:34,729 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'silver_customers'
-2026-05-26 15:59:39,595 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'silver_customers'
-2026-05-26 15:59:39,597 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:39,597 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 11/26: SemanticModel ####################################################[0m
-2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:39,598 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 12/26: Report ###########################################################[0m
-2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:39,599 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - 
-2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 20/26: DataPipeline #####################################################[0m
-2026-05-26 15:59:39,600 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-05-26 15:59:39,601 - INFO - fabric_cicd.publish - 
+2026-05-29 18:38:21,707 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
+2026-05-29 18:38:21,803 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-29 18:38:21,806 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-29 18:38:21,806 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
+2026-05-29 18:38:21,806 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-29 18:38:21,806 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value '7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com' replacement will be skipped due to unmatched optional filters in parameter find_replace 1
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value 'Dev.Silver' replacement will be skipped due to unmatched optional filters in parameter find_replace 2
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value '7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com' replacement will be skipped due to unmatched optional filters in parameter find_replace 3
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value 'Dev.Bronze' replacement will be skipped due to unmatched optional filters in parameter find_replace 4
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value '7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com' replacement will be skipped due to unmatched optional filters in parameter find_replace 5
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value '80f6f48e-c393-43e1-b65a-1b6212185016' replacement will be skipped due to unmatched optional filters in parameter find_replace 6
+2026-05-29 18:38:21,820 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
+2026-05-29 18:38:21,820 - WARNING - fabric_cicd._parameter._parameter - The find value 'fd090d74-08b5-4348-89a8-15d1280f84b3' replacement will be skipped due to unmatched optional filters in parameter find_replace 7
+2026-05-29 18:38:21,820 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Publishing Workspace Folders ############################################################[0m
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - 
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - Publishing Workspace Folders
+2026-05-29 18:38:25,514 - INFO - fabric_cicd.fabric_workspace - ->Published
+2026-05-29 18:38:35,455 - WARNING - fabric_cicd._common._validate_input - Selective deployment is enabled.
+2026-05-29 18:38:35,455 - WARNING - fabric_cicd._common._validate_input - Using items_to_include is risky as it can prevent needed dependencies from being deployment.  Use at your own risk.
+2026-05-29 18:38:35,455 - INFO - fabric_cicd.publish - 
+2026-05-29 18:38:35,455 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-29 18:38:35,455 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 10/27: Notebook #########################################################[0m
+2026-05-29 18:38:35,455 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
+2026-05-29 18:38:35,455 - INFO - fabric_cicd.publish - 
+2026-05-29 18:38:35,545 - INFO - fabric_cicd._items._base_publisher - Skipping Notebook item(s) due to items_to_include filter: ['bronze_customers', 'gold_products', 'silver_customers', 'silver_products']
+2026-05-29 18:38:35,554 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'products'
+2026-05-29 18:38:40,732 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'products'

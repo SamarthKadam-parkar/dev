@@ -3,8 +3,13 @@ from azure.identity import ClientSecretCredential
 from fabric_cicd import (
    FabricWorkspace,
    publish_all_items,
-   unpublish_all_orphan_items
+   unpublish_all_orphan_items,
+   append_feature_flag
 )
+from dotenv import load_dotenv
+load_dotenv()
+append_feature_flag("enable_experimental_features")
+append_feature_flag("enable_items_to_include")
 
 TENANT_ID = os.getenv("TENANT_ID")
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -21,14 +26,18 @@ target_workspace = FabricWorkspace(
    environment="test",
    item_type_in_scope=[
        "Notebook",
-       "DataPipeline",
-       "SemanticModel",
-       "Report",
-      #  "ApacheAirflowJob",
-      #  "GraphQLApi"
+      #  "DataPipeline",
+      #  "SemanticModel",
+      #  "Report",
+      #  "Environment",
+      #  "GraphQLApi",
+      #  "Reflex"
    ],
    token_credential=credential,
 )
-publish_all_items(target_workspace)
+publish_all_items(
+                  target_workspace,             
+                  items_to_include=["products.Notebook"] 
+                  )
 # unpublish_all_orphan_items(target_workspace)
 print("Deployment to TEST completed successfully")
