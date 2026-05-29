@@ -10,8 +10,8 @@ find_replace:
 
     - find_value: "Dev.Silver" # FIZX 
       replace_value:
-          test: "Test.Silver"
-          prod: "Prod.Silver"
+          test: "21c1e46e-88eb-465d-9521-022dad370d22" #Test.Silver
+          prod: "dfd53b5b-eac2-4e7c-b2f5-d085312fcbcb" #Prod.Silver
       item_type: "SemanticModel"
 
     # ── Connection 2: bronze ────────────────────────────────────────────
