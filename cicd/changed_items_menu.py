@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+import json
 
 # Replace with your actual repository path
 REPO_PATH = Path("C:/Users/samarth.kadam/dev")
@@ -45,7 +46,7 @@ def scan_workspace_items(repo_path):
     return items_by_type
 
 
-def main():
+def menu_items():
     items_by_type = scan_workspace_items(REPO_PATH)
     items_in_scope = []  # This list will hold your deployment targets
 
@@ -83,9 +84,20 @@ def main():
         if choice == str(len(menu_options) + 1):
             print("FINAL DEPLOYMENT SCOPE LIST GENERATED:")
             print("=" * 50)
-            print(f"items_in_scope = {items_in_scope}")
+            # print(f"items_in_scope = {items_in_scope}")
+            item_type_in_scope = list({item.split(".")[1] for item in items_in_scope})
+            # print(f"item_types_in_scope = {item_type_in_scope}")
             print("=" * 50)
             print("You can now pass this Python list directly into your deployment configuration.")
+            manifest_data = {
+                "item_type_in_scope" : item_type_in_scope,
+                "items_in_scope" : items_in_scope
+            }
+            with open("manifest/manifest.json","w") as f:
+                json.dump(manifest_data,f,indent=4)
+            print("Deployment Manifest updated")
+
+            return item_type_in_scope, items_in_scope
             break
 
         # Handle viewing and choosing items from a specific type
@@ -144,5 +156,4 @@ def main():
             print("\nInvalid selection. Please enter a valid menu number.")
 
 
-if __name__ == "__main__":
-    main()
+a = menu_items()
