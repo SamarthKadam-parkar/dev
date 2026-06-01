@@ -7,8 +7,7 @@ from fabric_cicd import (
    unpublish_all_orphan_items,
    append_feature_flag
 )
-from dotenv import load_dotenv
-load_dotenv()
+
 append_feature_flag("enable_experimental_features")
 append_feature_flag("enable_items_to_include")
 
