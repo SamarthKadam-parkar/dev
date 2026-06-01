@@ -212,11 +212,11 @@ class FabricDeployUI(tk.Tk):
 
         footer.pack(fill="x")
 
-        ttk.Button(footer, text="✓  Save & Deploy", style="Primary.TButton",
+        ttk.Button(footer, text="Save", style="Primary.TButton",
 
                    command=self._deploy).pack(side="right", padx=(8, 0))
 
-        ttk.Button(footer, text="✓  Clear All", style="TButton",
+        ttk.Button(footer, text="Clear All", style="TButton",
 
                    command=self._clear_all_global).pack(side="right")
 
@@ -536,11 +536,11 @@ class FabricDeployUI(tk.Tk):
 
             review.destroy()
 
-        ttk.Button(btn_frame, text="✓  Confirm & Deploy", style="Primary.TButton",
+        ttk.Button(btn_frame, text="Confirm & Deploy", style="Primary.TButton",
 
                    command=confirm_deploy).pack(side="right", padx=(8, 0))
 
-        ttk.Button(btn_frame, text="✓  Cancel", style="TButton",
+        ttk.Button(btn_frame, text="Cancel", style="TButton",
 
                    command=review.destroy).pack(side="right")
 
