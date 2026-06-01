@@ -43,7 +43,5 @@ table 'products.bronze'
 				in
 				    Source
 
-	changedProperty = Name
-
 	annotation PBI_ResultType = Table
 

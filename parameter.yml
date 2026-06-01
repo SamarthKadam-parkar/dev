@@ -10,8 +10,8 @@ find_replace:
 
     - find_value: "Dev.Silver" # FIZX 
       replace_value:
-          test: "Test.Silver"
-          prod: "Prod.Silver"
+          test: "21c1e46e-88eb-465d-9521-022dad370d22" #Test.Silver
+          prod: "dfd53b5b-eac2-4e7c-b2f5-d085312fcbcb" #Prod.Silver
       item_type: "SemanticModel"
 
     # ── Connection 2: bronze ────────────────────────────────────────────
@@ -39,6 +39,20 @@ find_replace:
     - find_value: "Dev.Bronze(onelake)"
       replace_value:
           test: "Test.Bronze(onelake)"
+          # prod: "Prod.Bronze"
+      item_type: "SemanticModel"
+
+      # ── Connection 3: bronze (Onelake) ────────────────────────────────────────────
+
+    - find_value: "7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com"
+      replace_value:
+          test: "7dwqcvphk3cupdg6up4h7ypmbu-2qah5oa7i6muppuvfibih4cw2i.datawarehouse.fabric.microsoft.com"
+          # prod: "7dwqcvphk3cupdg6up4h7ypmbu-52p5xjlwxqeujdyebyzgvlxifu.datawarehouse.fabric.microsoft.com"
+      item_type: "SemanticModel"
+
+    - find_value: "80f6f48e-c393-43e1-b65a-1b6212185016" #Dev.Bronze(onelake)
+      replace_value:
+          test: "9e5d22a7-8e8c-4909-8434-83480debaf41" #Test.Bronze(onelake)
           # prod: "Prod.Bronze"
       item_type: "SemanticModel"
 
