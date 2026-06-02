@@ -1,0 +1,6 @@
+#!/bin/sh
+# Get the latest commit details (Date, Author, Hash, Message)
+echo "=== COMMIT DETECTED ===" >> git_history.log
+date "+%Y-%m-%d %H:%M:%S" >> git_history.log
+git log -1 --pretty=format:"Author: %an%nHash: %h%nMessage: %s%n" >> git_history.log
+echo "-------------------------------------\n" >> git_history.log

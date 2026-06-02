@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "=== MERGE OUTGOING (PUSH) ===" >> git_history.log
+date "+%Y-%m-%d %H:%M:%S" >> git_history.log
+echo "Pushing local commits to GitHub..." >> git_history.log
+echo "-------------------------------------\n" >> git_history.log
