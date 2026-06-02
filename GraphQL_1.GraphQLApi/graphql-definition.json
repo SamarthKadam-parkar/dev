@@ -2,7 +2,3 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/graphqlApi/definition/1.0.0/schema.json",
   "datasources": []
 }
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/graphqlApi/definition/1.0.0/schema.json",
-  "datasources": []
-}
