@@ -3,8 +3,7 @@
         "Notebook"
     ],
     "items_in_scope": [
-        "bronze_customers.Notebook",
         "gold_products.Notebook",
-        "products.Notebook"
+        "silver_products.Notebook"
     ]
 }
