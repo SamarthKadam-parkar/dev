@@ -65,7 +65,7 @@ def git_commit_and_push(commit_message: str) -> str:
        origin = repo.remote(name="origin")
        origin.pull(rebase=True)
        origin.push()
-       return "Committed and pushed to origin successfully."
+       return "Committed and pushed to feature branch successfully."
    except Exception as e:
        return f"Git error: {e}"
 def build_workspace(workspace_id: str, env: str) -> FabricWorkspace:
@@ -205,7 +205,7 @@ class FabricDeployUI(tk.Tk):
    def _load_changed_items(self):
        try:
            self.changed_items = get_changed_items(
-               self.target_workspace.repository_directory, git_compare_ref="dev"
+               self.target_workspace.repository_directory, git_compare_ref="feature_skadam"
            )
            if self.changed_items:
                preview = ", ".join(self.changed_items[:5])
