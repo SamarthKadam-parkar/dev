@@ -98,7 +98,7 @@ class FabricDeployUI(tk.Tk):
 
         self.title("Fabric Deployment")
 
-        self.geometry("1000x620")
+        self.geometry("1100x720")
 
         self.minsize(900, 600)
 
