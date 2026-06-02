@@ -133,9 +133,22 @@ class FabricDeployUI(tk.Tk):
         # Header
         hdr = tk.Frame(self, bg=BG, pady=20, padx=24)
         hdr.pack(fill="x")
+
         ttk.Label(hdr, text="Fabric Deployment Scope", style="Title.TLabel").pack(side="left")
         self.scope_badge = ttk.Label(hdr, text="0 items", style="TLabel")
         self.scope_badge.pack(side="right")
+
+        # Workspace selector (radio buttons)
+        ws_frame = tk.Frame(self, bg=BG, pady=10)
+        ws_frame.pack(fill="x", padx=24)
+
+        ttk.Label(ws_frame, text="Select Workspace:", style="Head.TLabel").pack(side="left", padx=(0,10))
+
+        self.workspace_choice = tk.StringVar(value="test")
+        ttk.Radiobutton(ws_frame, text="Test", value="test", variable=self.workspace_choice,
+                        command=self._switch_workspace).pack(side="left", padx=5)
+        ttk.Radiobutton(ws_frame, text="Prod", value="prod", variable=self.workspace_choice,
+                        command=self._switch_workspace).pack(side="left", padx=5)
 
         # Notebook
         self.notebook = ttk.Notebook(self)
@@ -158,6 +171,24 @@ class FabricDeployUI(tk.Tk):
         footer.pack(fill="x")
         ttk.Button(footer, text="Add Changed Items", style="TButton", command=self._add_changed_items).pack(side="left", padx=5)
         ttk.Button(footer, text="Save & Deploy", style="Primary.TButton", command=self._deploy).pack(side="right", padx=5)
+
+    def _switch_workspace(self):
+        choice = self.workspace_choice.get()
+        if choice == "prod":
+            self.target_workspace = FabricWorkspace(
+                workspace_id=PROD_WORKSPACE_ID,
+                repository_directory="./",
+                environment="prod",
+                token_credential=credential,
+            )
+        else:
+            self.target_workspace = FabricWorkspace(
+                workspace_id=TEST_WORKSPACE_ID,
+                repository_directory="./",
+                environment="test",
+                token_credential=credential,
+            )
+        messagebox.showinfo("Workspace Changed", f"Switched to {choice.upper()} workspace")
 
     def _build_tab(self, type_key):
         data = self.items_by_type[type_key]
