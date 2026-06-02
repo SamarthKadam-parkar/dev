@@ -18,9 +18,9 @@ CLIENT_SECRET     = os.getenv("CLIENT_SECRET")
 TEST_WORKSPACE_ID = os.getenv("TEST_WORKSPACE_ID")
 PROD_WORKSPACE_ID = os.getenv("PROD_WORKSPACE_ID")
 
-# credential = ClientSecretCredential(
-#     tenant_id=TENANT_ID, client_id=CLIENT_ID, client_secret=CLIENT_SECRET
-# )
+credential = ClientSecretCredential(
+    tenant_id=TENANT_ID, client_id=CLIENT_ID, client_secret=CLIENT_SECRET
+)
 
 # ── Theme ─────────────────────────────────────────────────────────────────────
 PRIMARY   = "#0d9488"
@@ -102,13 +102,13 @@ def get_changed_items_vs_dev(repo_path: Path) -> list:
                     break
     return sorted(items)
 
-# def build_workspace(workspace_id: str, env: str) -> FabricWorkspace:
-#     return FabricWorkspace(
-#         workspace_id=workspace_id,
-#         repository_directory="./",
-#         environment=env,
-#         token_credential=credential,
-#     )
+def build_workspace(workspace_id: str, env: str) -> FabricWorkspace:
+    return FabricWorkspace(
+        workspace_id=workspace_id,
+        repository_directory="./",
+        environment=env,
+        token_credential=credential,
+    )
 
 # ── App ───────────────────────────────────────────────────────────────────────
 class FabricDeployUI(tk.Tk):
@@ -127,7 +127,7 @@ class FabricDeployUI(tk.Tk):
         self.workspace_var       = tk.StringVar(value="test")
 
         self._apply_styles()
-        # self._show_workspace_selector()
+        self._show_workspace_selector()
 
     # ── Styles ────────────────────────────────────────────────────────────────
     def _apply_styles(self):
@@ -161,46 +161,46 @@ class FabricDeployUI(tk.Tk):
                     borderwidth=0, arrowcolor=SECONDARY)
 
     # ── Step 1: Workspace selector ────────────────────────────────────────────
-    # def _show_workspace_selector(self):
-    #     self.sel_frame = tk.Frame(self, bg=BG)
-    #     self.sel_frame.place(relx=0.5, rely=0.5, anchor="center")
+    def _show_workspace_selector(self):
+        self.sel_frame = tk.Frame(self, bg=BG)
+        self.sel_frame.place(relx=0.5, rely=0.5, anchor="center")
 
-    #     tk.Label(self.sel_frame, text="Fabric Deployment",
-    #              bg=BG, fg=PRIMARY, font=FONT_BIG).pack(pady=(0, 4))
-    #     tk.Label(self.sel_frame, text="Select a target workspace to continue",
-    #              bg=BG, fg=FG_LIGHT, font=FONT_MAIN).pack(pady=(0, 24))
+        tk.Label(self.sel_frame, text="Fabric Deployment",
+                 bg=BG, fg=PRIMARY, font=FONT_BIG).pack(pady=(0, 4))
+        tk.Label(self.sel_frame, text="Select a target workspace to continue",
+                 bg=BG, fg=FG_LIGHT, font=FONT_MAIN).pack(pady=(0, 24))
 
-    #     card = tk.Frame(self.sel_frame, bg=BG_CARD, padx=32, pady=28,
-    #                     relief="solid", borderwidth=1)
-    #     card.pack()
+        card = tk.Frame(self.sel_frame, bg=BG_CARD, padx=32, pady=28,
+                        relief="solid", borderwidth=1)
+        card.pack()
 
-    #     tk.Label(card, text="Target Workspace", bg=BG_CARD,
-    #              fg=PRIMARY, font=FONT_HEAD).pack(anchor="w", pady=(0, 16))
+        tk.Label(card, text="Target Workspace", bg=BG_CARD,
+                 fg=PRIMARY, font=FONT_HEAD).pack(anchor="w", pady=(0, 16))
 
-    #     for label, val, color in [("Test Workspace", "test", PRIMARY),
-    #                                ("Prod Workspace", "prod",  WARN)]:
-    #         row = tk.Frame(card, bg=BG_CARD, pady=6)
-    #         row.pack(fill="x")
-    #         ttk.Radiobutton(row, text=label, variable=self.workspace_var,
-    #                         value=val).pack(side="left")
-    #         tk.Label(row, text=val.upper(), bg=color, fg="#fff",
-    #                  font=("Segoe UI", 8, "bold"), padx=8, pady=2).pack(side="left", padx=(12, 0))
+        for label, val, color in [("Test Workspace", "test", PRIMARY),
+                                   ("Prod Workspace", "prod",  WARN)]:
+            row = tk.Frame(card, bg=BG_CARD, pady=6)
+            row.pack(fill="x")
+            ttk.Radiobutton(row, text=label, variable=self.workspace_var,
+                            value=val).pack(side="left")
+            tk.Label(row, text=val.upper(), bg=color, fg="#fff",
+                     font=("Segoe UI", 8, "bold"), padx=8, pady=2).pack(side="left", padx=(12, 0))
 
-    #     tk.Frame(card, bg=BORDER, height=1).pack(fill="x", pady=16)
-    #     ttk.Button(card, text="✓  Connect & Continue", style="Primary.TButton",
-    #                command=self._connect_workspace).pack(fill="x")
+        tk.Frame(card, bg=BORDER, height=1).pack(fill="x", pady=16)
+        ttk.Button(card, text="✓  Connect & Continue", style="Primary.TButton",
+                   command=self._connect_workspace).pack(fill="x")
 
-    # def _connect_workspace(self):
-    #     env   = self.workspace_var.get()
-    #     ws_id = TEST_WORKSPACE_ID if env == "test" else PROD_WORKSPACE_ID
-    #     try:
-    #         self.target_workspace = build_workspace(ws_id, env)
-    #     except Exception as e:
-    #         messagebox.showerror("Connection Error", f"Could not connect:\n{e}")
-    #         return
-    #     self.sel_frame.destroy()
-    #     self._build_main_ui()
-    #     self._load_changed_items()
+    def _connect_workspace(self):
+        env   = self.workspace_var.get()
+        ws_id = TEST_WORKSPACE_ID if env == "test" else PROD_WORKSPACE_ID
+        try:
+            self.target_workspace = build_workspace(ws_id, env)
+        except Exception as e:
+            messagebox.showerror("Connection Error", f"Could not connect:\n{e}")
+            return
+        self.sel_frame.destroy()
+        self._build_main_ui()
+        self._load_changed_items()
 
     # ── Step 2: Main UI ───────────────────────────────────────────────────────
     def _build_main_ui(self):
