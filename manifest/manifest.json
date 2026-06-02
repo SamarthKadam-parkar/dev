@@ -1,8 +1,11 @@
 {
     "item_type_in_scope": [
-        "Notebook"
+        "Notebook",
+        "GraphQLApi"
     ],
     "items_in_scope": [
+        "GraphQL_1.GraphQLApi",
+        "gold_products.Notebook",
         "products.Notebook"
     ]
 }
