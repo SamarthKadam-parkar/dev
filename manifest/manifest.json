@@ -1,11 +1,14 @@
 {
     "item_type_in_scope": [
-        "SemanticModel",
-        "Notebook"
+        "DataPipeline",
+        "Reflex",
+        "GraphQLApi",
+        "Environment"
     ],
     "items_in_scope": [
-        "gold_products.Notebook",
-        "products.Notebook",
-        "products_report.SemanticModel"
+        "Activator 2026-05-27 14&#58;54&#58;34.Reflex",
+        "GraphQL_1.GraphQLApi",
+        "Pipeline_1.DataPipeline",
+        "environment_1.Environment"
     ]
 }
