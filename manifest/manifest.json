@@ -1,9 +1,9 @@
 {
     "item_type_in_scope": [
-        "Reflex",
         "DataPipeline",
-        "Environment",
-        "GraphQLApi"
+        "Reflex",
+        "GraphQLApi",
+        "Environment"
     ],
     "items_in_scope": [
         "Activator 2026-05-27 14&#58;54&#58;34.Reflex",

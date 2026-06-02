@@ -1,11 +1,7 @@
-2026-06-02 19:03:54,656 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
-2026-06-02 19:03:55,082 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-02 19:03:55,086 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-02 19:03:55,087 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
-2026-06-02 19:03:55,087 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-02 19:03:55,090 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-02 19:03:55,119 - WARNING - fabric_cicd._parameter._parameter - The find value '7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com' replacement will be skipped due to target environment 'prod' not found in parameter find_replace 5
-2026-06-02 19:03:55,121 - WARNING - fabric_cicd._parameter._parameter - The find value 'Dev.Bronze(onelake)' replacement will be skipped due to target environment 'prod' not found in parameter find_replace 6
-2026-06-02 19:03:55,121 - WARNING - fabric_cicd._parameter._parameter - The find value '7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com' replacement will be skipped due to target environment 'prod' not found in parameter find_replace 7
-2026-06-02 19:03:55,121 - WARNING - fabric_cicd._parameter._parameter - The find value '80f6f48e-c393-43e1-b65a-1b6212185016' replacement will be skipped due to target environment 'prod' not found in parameter find_replace 8
-2026-06-02 19:03:55,123 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
+2026-06-02 19:06:00,286 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
+2026-06-02 19:06:00,516 - INFO - fabric_cicd.fabric_workspace - 
+2026-06-02 19:06:00,516 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-06-02 19:06:00,516 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
+2026-06-02 19:06:00,516 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-06-02 19:06:00,516 - INFO - fabric_cicd.fabric_workspace - 
+2026-06-02 19:06:00,549 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
