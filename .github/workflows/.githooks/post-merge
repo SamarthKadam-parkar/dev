@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "=== INCOMING MERGE (PULL/MERGE) ===" >> git_history.log
+date "+%Y-%m-%d %H:%M:%S" >> git_history.log
+echo "Local repository updated with remote changes." >> git_history.log
+echo "-------------------------------------\n" >> git_history.log
