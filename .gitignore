@@ -1,3 +1,4 @@
 .env
 *.ipynb
 git_history.log
+fabric_cicd.error.log
