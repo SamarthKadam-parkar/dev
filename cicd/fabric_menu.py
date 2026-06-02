@@ -7,6 +7,22 @@ from fabric_cicd import FabricWorkspace, get_changed_items
 from azure.identity import ClientSecretCredential
 from git import Repo
 
+# ── Modern Fabric Palette (Teal + Sage) ──────────────────────────────────────
+PRIMARY    = "#0d9488"      # Teal
+SECONDARY  = "#6b7280"      # Sage Gray
+ACCENT     = "#14b8a6"      # Light Teal
+BG         = "#f8fafc"      # Almost white
+BG_CARD    = "#ffffff"      # Pure white cards
+BG_HOVER   = "#f1f5f9"      # Hover state
+FG         = "#1e293b"      # Dark text
+FG_LIGHT   = "#64748b"      # Light text
+BORDER     = "#e2e8f0"      # Light border
+SUCCESS    = "#10b981"      # Green confirmation
+
+FONT_MAIN  = ("Segoe UI", 10)
+FONT_HEAD  = ("Segoe UI", 11, "bold")
+FONT_BIG   = ("Segoe UI", 14, "bold")
+
 # ── Config ───────────────────────────────────────────────
 load_dotenv()
 REPO_PATH = Path("C:/Users/samarth.kadam/dev")
@@ -61,8 +77,8 @@ class FabricDeployUI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Fabric Deployment")
-        self.geometry("1000x700")
-        self.configure(bg="#f8fafc")
+        self.geometry("1100x720")
+        self.configure(bg=BG)
 
         # Workspace selection
         self.target_workspace = None
@@ -73,11 +89,14 @@ class FabricDeployUI(tk.Tk):
         self.items_in_scope = set()
         self.check_vars = {}
 
+        # Styles
+        self._apply_styles()
+
         # UI
         self._build_ui()
 
     def _select_workspace(self):
-        choice = tk.simpledialog.askstring("Workspace", "Enter workspace (test/prod):")
+        choice = simpledialog.askstring("Workspace", "Enter workspace (test/prod):")
         if choice and choice.lower() == "prod":
             self.target_workspace = FabricWorkspace(
                 workspace_id=PROD_WORKSPACE_ID,
@@ -93,33 +112,52 @@ class FabricDeployUI(tk.Tk):
                 token_credential=credential,
             )
 
+    def _apply_styles(self):
+        s = ttk.Style(self)
+        s.theme_use("clam")
+        s.configure("TNotebook", background=BG, borderwidth=0)
+        s.configure("TNotebook.Tab", background=BG_CARD, foreground=FG_LIGHT,
+                    font=FONT_MAIN, padding=[12, 6], borderwidth=0)
+        s.map("TNotebook.Tab", background=[("selected", PRIMARY)], foreground=[("selected", "#ffffff")])
+        s.configure("TLabel", background=BG, foreground=FG, font=FONT_MAIN)
+        s.configure("Title.TLabel", background=BG, foreground=PRIMARY, font=FONT_BIG)
+        s.configure("Head.TLabel", background=BG_CARD, foreground=PRIMARY, font=FONT_HEAD)
+        s.configure("TButton", background=BG_CARD, foreground=FG, font=FONT_MAIN,
+                    borderwidth=0, padding=[10, 6], relief="flat")
+        s.map("TButton", background=[("active", BG_HOVER), ("pressed", BG_HOVER)])
+        s.configure("Primary.TButton", background=PRIMARY, foreground="#ffffff", font=FONT_HEAD,
+                    padding=[12, 6], borderwidth=0)
+        s.map("Primary.TButton", background=[("active", "#0d8a7a"), ("pressed", "#0d8a7a")])
+
     def _build_ui(self):
         # Header
-        hdr = tk.Frame(self, bg="#f8fafc", pady=10)
+        hdr = tk.Frame(self, bg=BG, pady=20, padx=24)
         hdr.pack(fill="x")
-        ttk.Label(hdr, text="Fabric Deployment Scope", font=("Segoe UI", 14, "bold")).pack(side="left")
-        self.scope_badge = ttk.Label(hdr, text="0 items")
+        ttk.Label(hdr, text="Fabric Deployment Scope", style="Title.TLabel").pack(side="left")
+        self.scope_badge = ttk.Label(hdr, text="0 items", style="TLabel")
         self.scope_badge.pack(side="right")
 
         # Notebook
         self.notebook = ttk.Notebook(self)
-        self.notebook.pack(fill="both", expand=True, padx=10, pady=10)
+        self.notebook.pack(fill="both", expand=True, padx=20, pady=10)
         for type_key in sorted(self.items_by_type.keys()):
             self._build_tab(type_key)
 
         # Scope panel
-        right = tk.Frame(self, bg="#ffffff", padx=10, pady=10)
-        right.pack(side="right", fill="y")
-        ttk.Label(right, text="Selected Items", font=("Segoe UI", 11, "bold")).pack(anchor="w")
-        self.scope_listbox = tk.Listbox(right, height=20, width=40)
-        self.scope_listbox.pack(fill="both", expand=True)
+        right = tk.Frame(self, bg=BG_CARD, padx=16, pady=12, relief="solid", borderwidth=1)
+        right.pack(side="right", fill="y", padx=(10, 20))
+        ttk.Label(right, text="Selected Items", style="Head.TLabel").pack(anchor="w", pady=(0, 8))
+        self.scope_listbox = tk.Listbox(right, bg=BG_CARD, fg=FG, font=FONT_MAIN,
+                                        selectbackground=PRIMARY, selectforeground="#ffffff",
+                                        borderwidth=1, relief="solid", height=20, width=30)
+        self.scope_listbox.pack(fill="both", expand=True, pady=(8, 8))
         ttk.Button(right, text="Remove Selected", command=self._remove_selected).pack(fill="x", pady=5)
 
         # Footer
-        footer = tk.Frame(self, bg="#f8fafc", pady=10)
+        footer = tk.Frame(self, bg=BG, pady=12, padx=24)
         footer.pack(fill="x")
-        ttk.Button(footer, text="Add Changed Items", command=self._add_changed_items).pack(side="left", padx=5)
-        ttk.Button(footer, text="Save & Deploy", command=self._deploy).pack(side="right", padx=5)
+        ttk.Button(footer, text="Add Changed Items", style="TButton", command=self._add_changed_items).pack(side="left", padx=5)
+        ttk.Button(footer, text="Save & Deploy", style="Primary.TButton", command=self._deploy).pack(side="right", padx=5)
 
     def _build_tab(self, type_key):
         data = self.items_by_type[type_key]
@@ -127,12 +165,47 @@ class FabricDeployUI(tk.Tk):
         frame = ttk.Frame(self.notebook)
         self.notebook.add(frame, text=f"{data['display_type']} ({len(items)})")
 
+        # Search bar
+        search_var = tk.StringVar()
+        search_entry = ttk.Entry(frame, textvariable=search_var, width=30)
+        search_entry.pack(fill="x", padx=10, pady=5)
+
+        list_frame = tk.Frame(frame, bg=BG)
+        list_frame.pack(fill="both", expand=True)
+
+        canvas = tk.Canvas(list_frame, bg=BG, highlightthickness=0)
+        scrollbar = ttk.Scrollbar(list_frame, orient="vertical", command=canvas.yview)
+        inner = tk.Frame(canvas, bg=BG)
+        canvas.create_window((0, 0), window=inner, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        scrollbar.pack(side="right", fill="y")
+        canvas.pack(side="left", fill="both", expand=True)
+
+        row_widgets = []
         for item in items:
             var = tk.BooleanVar(value=False)
             self.check_vars[item["full"]] = var
-            cb = ttk.Checkbutton(frame, text=item["full"], variable=var,
+            cb = ttk.Checkbutton(inner, text=item["full"], variable=var,
                                  command=lambda f=item["full"], v=var: self._toggle_item(f, v))
-            cb.pack(anchor="w")
+            cb.pack(anchor="w", padx=10, pady=2)
+            row_widgets.append((cb, item["full"], var))
+
+        # Filtering logic
+        def _filter(*_):
+            q = search_var.get().lower()
+            for cb, full, var in row_widgets:
+                if q in full.lower():
+                    cb.pack(anchor="w", padx=10, pady=2)
+                else:
+                    cb.pack_forget()
+
+        search_var.trace_add("write", _filter)
+
+        # Update scroll region
+        inner.update_idletasks()
+        canvas.configure(scrollregion=canvas.bbox("all"))
+        canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(int(-1*(e.delta/120)), "units"))
 
     def _toggle_item(self, full, var):
         if var.get():

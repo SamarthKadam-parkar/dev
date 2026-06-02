@@ -1,8 +1,11 @@
 {
     "item_type_in_scope": [
-        "SemanticModel"
+        "DataPipeline",
+        "Notebook"
     ],
     "items_in_scope": [
-        "products_report.SemanticModel"
+        "Pipeline_1.DataPipeline",
+        "gold_products.Notebook",
+        "products.Notebook"
     ]
 }
