@@ -1,9 +1,8 @@
 {
     "item_type_in_scope": [
-        "Notebook"
+        "SemanticModel"
     ],
     "items_in_scope": [
-        "gold_products.Notebook",
-        "silver_products.Notebook"
+        "products_report.SemanticModel"
     ]
 }
