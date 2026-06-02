@@ -1,9 +1,11 @@
 {
     "item_type_in_scope": [
-        "SemanticModel"
+        "SemanticModel",
+        "Notebook"
     ],
     "items_in_scope": [
-        "products_report.SemanticModel",
-        "test_2_semantic_model.SemanticModel"
+        "gold_products.Notebook",
+        "products.Notebook",
+        "products_report.SemanticModel"
     ]
 }
