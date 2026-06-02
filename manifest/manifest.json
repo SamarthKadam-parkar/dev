@@ -6,7 +6,6 @@
         "SemanticModel"
     ],
     "items_in_scope": [
-        "bronze_customers.Notebook",
         "gold_products.Notebook",
         "products_report.Report",
         "products_report.SemanticModel"
