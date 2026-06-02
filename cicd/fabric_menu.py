@@ -98,7 +98,7 @@ class FabricDeployUI(tk.Tk):
 
         self.title("Fabric Deployment")
 
-        self.geometry("1100x720")
+        self.geometry("1000x620")
 
         self.minsize(900, 600)
 
@@ -366,7 +366,7 @@ class FabricDeployUI(tk.Tk):
 
                                         selectbackground=PRIMARY, selectforeground="#ffffff",
 
-                                        borderwidth=1, relief="solid", height=20, width=24)
+                                        borderwidth=1, relief="solid", height=20, width=20)
 
         scrollbar = ttk.Scrollbar(parent, orient="vertical", command=self.scope_listbox.yview)
 

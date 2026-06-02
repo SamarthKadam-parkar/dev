@@ -1,10 +1,56 @@
-import sys
+import sys, os
+from dotenv import load_dotenv
 from pathlib import Path
 import json
+from fabric_cicd import FabricWorkspace,get_changed_items
+from azure.identity import ClientSecretCredential
+from git import Repo
 
-# Replace with your actual repository path
+load_dotenv()
 REPO_PATH = Path("C:/Users/samarth.kadam/dev")
+TENANT_ID = os.getenv("TENANT_ID")
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 
+#prod workspace ID
+TEST_WORKSPACE_ID = os.getenv("TEST_WORKSPACE_ID")
+
+credential = ClientSecretCredential(
+   tenant_id=TENANT_ID,
+   client_id=CLIENT_ID,
+   client_secret=CLIENT_SECRET,
+)
+target_workspace = FabricWorkspace(
+   workspace_id=TEST_WORKSPACE_ID,
+   repository_directory="./",
+   environment="test",
+   token_credential=credential,
+)
+def git_commit_and_sync_with_library(commit_message="Auto-commit via GitPython"):
+    try:
+        # Open the current working directory repository
+        repo_path = os.getcwd()
+        repo = Repo(repo_path)
+
+        if repo.bare:
+            print("Could not find a valid Git repository.")
+            return
+
+        # 1. Stage all changes
+        repo.git.add(A=True)  # Equivalent to 'git add .'
+
+        # 2. Commit changes
+        repo.index.commit(commit_message)
+
+        # 3. Sync with remote (Pull then Push)
+        origin = repo.remote(name="origin")
+        origin.pull(rebase=True)
+        origin.push()
+
+        print("Successfully committed and synced changes using GitPython!")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 def scan_workspace_items(repo_path):
     """Scans the repository and groups item details by their item type."""
@@ -58,10 +104,12 @@ def menu_items():
         print("\n" + "=" * 50)
         print("          FABRIC DEPLOYMENT SCOPE BUILDER          ")
         print("=" * 50)
-
+        
         menu_options = sorted(list(items_by_type.keys()))
 
         # Display the menu with item counts
+        print("Changed Items")
+        print(get_changed_items(target_workspace.repository_directory,git_compare_ref="dev"))
         for index, type_key in enumerate(menu_options, start=1):
             display_name = items_by_type[type_key]["display_type"]
             count = len(items_by_type[type_key]["items"])
@@ -96,7 +144,7 @@ def menu_items():
             with open("manifest/manifest.json","w") as f:
                 json.dump(manifest_data,f,indent=4)
             print("Deployment Manifest updated")
-
+            git_commit_and_sync_with_library(f"Deployed {items_in_scope}")
             return item_type_in_scope, items_in_scope
             break
 
