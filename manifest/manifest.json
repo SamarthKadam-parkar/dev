@@ -4,6 +4,6 @@
     ],
     "items_in_scope": [
         "gold_products.Notebook",
-        "products.Notebook"
+        "silver_products.Notebook"
     ]
 }

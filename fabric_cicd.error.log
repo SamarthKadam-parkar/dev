@@ -1,42 +1,7 @@
-2026-06-01 14:17:14,473 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
-2026-06-01 14:17:14,588 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-01 14:17:14,588 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-01 14:17:14,588 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
-2026-06-01 14:17:14,588 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-01 14:17:14,590 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-01 14:17:14,599 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,599 - WARNING - fabric_cicd._parameter._parameter - The find value '7DWQCVPHK3CUPDG6UP4H7YPMBU-OQGQT7NVBBEEHCNICXISQD4EWM.datawarehouse.fabric.microsoft.com' replacement will be skipped due to unmatched optional filters in parameter find_replace 1
-2026-06-01 14:17:14,599 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,601 - WARNING - fabric_cicd._parameter._parameter - The find value 'Dev.Silver' replacement will be skipped due to unmatched optional filters in parameter find_replace 2
-2026-06-01 14:17:14,602 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,602 - WARNING - fabric_cicd._parameter._parameter - The find value '7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com' replacement will be skipped due to unmatched optional filters in parameter find_replace 3
-2026-06-01 14:17:14,602 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,602 - WARNING - fabric_cicd._parameter._parameter - The find value 'Dev.Bronze' replacement will be skipped due to unmatched optional filters in parameter find_replace 4
-2026-06-01 14:17:14,602 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,602 - WARNING - fabric_cicd._parameter._parameter - The find value '7dwqcvphk3cupdg6up4h7ypmbu-oqgqt7nvbbeehcnicxisqd4ewm.datawarehouse.fabric.microsoft.com' replacement will be skipped due to unmatched optional filters in parameter find_replace 5
-2026-06-01 14:17:14,602 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,602 - WARNING - fabric_cicd._parameter._parameter - The find value '80f6f48e-c393-43e1-b65a-1b6212185016' replacement will be skipped due to unmatched optional filters in parameter find_replace 6
-2026-06-01 14:17:14,602 - ERROR - fabric_cicd._parameter._parameter - Item type 'SemanticModel' not in scope
-2026-06-01 14:17:14,602 - WARNING - fabric_cicd._parameter._parameter - The find value 'fd090d74-08b5-4348-89a8-15d1280f84b3' replacement will be skipped due to unmatched optional filters in parameter find_replace 7
-2026-06-01 14:17:14,602 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Publishing Workspace Folders ############################################################[0m
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - Publishing Workspace Folders
-2026-06-01 14:17:18,185 - INFO - fabric_cicd.fabric_workspace - ->Published
-2026-06-01 14:17:28,633 - WARNING - fabric_cicd._common._validate_input - Selective deployment is enabled.
-2026-06-01 14:17:28,636 - WARNING - fabric_cicd._common._validate_input - Using items_to_include is risky as it can prevent needed dependencies from being deployment.  Use at your own risk.
-2026-06-01 14:17:28,636 - INFO - fabric_cicd.publish - 
-2026-06-01 14:17:28,636 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-06-01 14:17:28,636 - INFO - fabric_cicd.publish - [32m[1m########## Publishing Item 10/27: Notebook #########################################################[0m
-2026-06-01 14:17:28,636 - INFO - fabric_cicd.publish - [32m[1m####################################################################################################[0m
-2026-06-01 14:17:28,636 - INFO - fabric_cicd.publish - 
-2026-06-01 14:17:28,710 - INFO - fabric_cicd._items._base_publisher - Skipping Notebook item(s) due to items_to_include filter: ['silver_customers', 'silver_products']
-2026-06-01 14:17:28,719 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'bronze_customers'
-2026-06-01 14:17:28,722 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'products'
-2026-06-01 14:17:28,722 - INFO - fabric_cicd.fabric_workspace - Publishing Notebook 'gold_products'
-2026-06-01 14:17:34,536 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'bronze_customers'
-2026-06-01 14:17:34,552 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'gold_products'
-2026-06-01 14:17:34,552 - INFO - fabric_cicd.fabric_workspace - ->Published Notebook 'products'
+2026-06-02 13:34:20,094 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
+2026-06-02 13:34:20,149 - INFO - fabric_cicd.fabric_workspace - 
+2026-06-02 13:34:20,150 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-06-02 13:34:20,150 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
+2026-06-02 13:34:20,150 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-06-02 13:34:20,150 - INFO - fabric_cicd.fabric_workspace - 
+2026-06-02 13:34:20,154 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
