@@ -37,7 +37,7 @@ target_workspace = FabricWorkspace(
 )
 
 changed = get_changed_items(
-   repository_directory=target_workspace.repository_directory,
+  target_workspace.repository_directory,
    git_compare_ref="dev",
 )
 
