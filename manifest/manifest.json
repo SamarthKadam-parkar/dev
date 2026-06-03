@@ -3,7 +3,6 @@
         "Notebook"
     ],
     "items_in_scope": [
-        "gold_products.Notebook",
-        "products.Notebook"
+        "gold_customers.Notebook"
     ]
 }
