@@ -279,7 +279,7 @@ class FabricDeployUI(tk.Tk):
                 for data in self.items_by_type.values()
                 for item in data["items"]
             }
-            self.changed_items = get_changed_items(repository_directory=self.target_workspace.repository_directory,git_compare_ref="dev")
+            self.changed_items = get_changed_items(self.target_workspace.repository_directory,git_compare_ref="dev")
             if self.changed_items:
                 preview = ", ".join(self.changed_items[:4])
                 extra   = f"  +{len(self.changed_items)-4} more" if len(self.changed_items) > 4 else ""
