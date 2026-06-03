@@ -1,3 +1,2 @@
 .env
 *.ipynb
-fabric_cicd.error.log
