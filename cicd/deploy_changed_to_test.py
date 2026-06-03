@@ -7,6 +7,8 @@ from fabric_cicd import (
    get_changed_items,
    append_feature_flag,
 )
+from dotenv import load_dotenv
+load_dotenv()
 # ── 1. Required feature flags for selective / changed-only deployment ─────────
 #
 # items_to_include is an experimental feature — both flags are MANDATORY.
@@ -51,26 +53,7 @@ target_workspace = FabricWorkspace(
 # Deleted item cleanup is handled separately by unpublish_all_orphan_items().
 changed = get_changed_items(
    repository_directory=target_workspace.repository_directory,
-   git_compare_ref="dev",
+   git_compare_ref="feature_skadam",
 )
-# ── 5. Deploy only what changed ───────────────────────────────────────────────
-#
-# Guard: if changed is empty, do NOT call publish_all_items() without
-# items_to_include — that would trigger a full deployment of everything.
-if changed:
-   print(f"Changed items detected ({len(changed)}):")
-   for item in changed:
-       print(f"  • {item}")
-   # Publish only the changed/added items
-   publish_all_items(
-       fabric_workspace_obj=target_workspace,
-       items_to_include=changed,
-   )
-   # Clean up items that were deleted from the repo but still exist in TEST.
-   # items_to_include is not supported on unpublish — it always compares
-   # the full repo state against the workspace, so this is safe to call
-   # unconditionally when there are changes.
-   #unpublish_all_orphan_items(target_workspace)
-   print("Deployment to TEST completed successfully.")
-else:
-   print("No Fabric items were added, modified, or removed — skipping deployment.")
+
+print(changed)
