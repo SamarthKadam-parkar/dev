@@ -93,7 +93,7 @@ def get_changed_items_vs_dev(repo_path: Path, known_items: set) -> list:
     except Exception:
         pass  # use cached remote refs if fetch fails
 
-    diff_output = repo.git.diff("origin/dev...HEAD", "--name-only", "--diff-filter=ACMR")
+    diff_output = repo.git.diff("origin/dev..HEAD", "--name-only", "--diff-filter=ACMR")
     if not diff_output.strip():
         return []
 
