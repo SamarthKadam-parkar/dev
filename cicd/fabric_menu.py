@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from pathlib import Path
 from dotenv import load_dotenv
-from fabric_cicd import FabricWorkspace
+from fabric_cicd import FabricWorkspace, get_changed_items
 from azure.identity import ClientSecretCredential
 from git import Repo
 
@@ -75,35 +75,35 @@ def git_commit_and_push(commit_message: str) -> str:
     except Exception as e:
         return f"Git error: {e}"
 
-def get_changed_items_vs_dev(repo_path: Path, known_items: set) -> list:
-    """
-    Returns Fabric items changed in the current branch vs origin/dev,
-    filtered strictly against known Fabric item folders scanned from the repo.
+# def get_changed_items_vs_dev(repo_path: Path, known_items: set) -> list:
+#     """
+#     Returns Fabric items changed in the current branch vs origin/dev,
+#     filtered strictly against known Fabric item folders scanned from the repo.
 
-    Each changed file lives inside a Fabric item folder, e.g.:
-        MyReport.Report/report.json   ->  first component = MyReport.Report
-        MyModel.SemanticModel/item.bim -> first component = MyModel.SemanticModel
+#     Each changed file lives inside a Fabric item folder, e.g.:
+#         MyReport.Report/report.json   ->  first component = MyReport.Report
+#         MyModel.SemanticModel/item.bim -> first component = MyModel.SemanticModel
 
-    By checking only the first path component against known_items we avoid
-    matching arbitrary dotted files like config.json or README.md.
-    """
-    repo = Repo(str(repo_path))
-    try:
-        repo.remotes.origin.fetch()
-    except Exception:
-        pass  # use cached remote refs if fetch fails
+#     By checking only the first path component against known_items we avoid
+#     matching arbitrary dotted files like config.json or README.md.
+#     """
+#     repo = Repo(str(repo_path))
+#     try:
+#         repo.remotes.origin.fetch()
+#     except Exception:
+#         pass  # use cached remote refs if fetch fails
 
-    diff_output = repo.git.diff("origin/dev..HEAD", "--name-only", "--diff-filter=ACMR")
-    if not diff_output.strip():
-        return []
+#     diff_output = repo.git.diff("origin/dev", "--name-only", "--diff-filter=ACMR")
+#     if not diff_output.strip():
+#         return []
 
-    changed = set()
-    for file_path in diff_output.strip().split("\n"):
-        parts = Path(file_path).parts
-        if parts and parts[0] in known_items:
-            changed.add(parts[0])
+#     changed = set()
+#     for file_path in diff_output.strip().split("\n"):
+#         parts = Path(file_path).parts
+#         if parts and parts[0] in known_items:
+#             changed.add(parts[0])
 
-    return sorted(changed)
+#     return sorted(changed)
 
 def build_workspace(workspace_id: str, env: str) -> FabricWorkspace:
     return FabricWorkspace(
@@ -279,7 +279,7 @@ class FabricDeployUI(tk.Tk):
                 for data in self.items_by_type.values()
                 for item in data["items"]
             }
-            self.changed_items = get_changed_items_vs_dev(REPO_PATH, known_items)
+            self.changed_items = get_changed_items(repository_directory=self.target_workspace.repository_directory,git_compare_ref="dev")
             if self.changed_items:
                 preview = ", ".join(self.changed_items[:4])
                 extra   = f"  +{len(self.changed_items)-4} more" if len(self.changed_items) > 4 else ""
