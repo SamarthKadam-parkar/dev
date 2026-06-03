@@ -24,3 +24,7 @@ print("Creating gold table for customer data")
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# MARKDOWN ********************
+
+# test 
