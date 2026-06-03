@@ -1,8 +1,8 @@
 {
     "item_type_in_scope": [
-        "DataPipeline"
+        "Notebook"
     ],
     "items_in_scope": [
-        "Pipeline_1.DataPipeline"
+        "gold_customers.Notebook"
     ]
 }
