@@ -1,14 +1,8 @@
 {
     "item_type_in_scope": [
-        "DataPipeline",
-        "Reflex",
-        "GraphQLApi",
-        "Environment"
+        "Notebook"
     ],
     "items_in_scope": [
-        "Activator 2026-05-27 14&#58;54&#58;34.Reflex",
-        "GraphQL_1.GraphQLApi",
-        "Pipeline_1.DataPipeline",
-        "environment_1.Environment"
+        "gold_customers.Notebook"
     ]
 }
