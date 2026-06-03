@@ -53,7 +53,7 @@ target_workspace = FabricWorkspace(
 # Deleted item cleanup is handled separately by unpublish_all_orphan_items().
 changed = get_changed_items(
    repository_directory=target_workspace.repository_directory,
-   git_compare_ref="feature_skadam",
+   git_compare_ref="dev",
 )
 
 print(changed)

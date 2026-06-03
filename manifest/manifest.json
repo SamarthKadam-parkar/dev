@@ -1,8 +1,8 @@
 {
     "item_type_in_scope": [
-        "OrgApp"
+        "Notebook"
     ],
     "items_in_scope": [
-        "Products (Dev).OrgApp"
+        "gold_customers.Notebook"
     ]
 }
