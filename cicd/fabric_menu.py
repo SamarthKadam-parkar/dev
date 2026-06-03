@@ -10,7 +10,7 @@ from git import Repo
 load_dotenv()
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-REPO_PATH         = Path("/Users/samarthkadam/dev")
+REPO_PATH         = Path("C:/Users/samarth.kadam/dev")
 MANIFEST_PATH     = Path("manifest/manifest.json")
 TENANT_ID         = os.getenv("TENANT_ID")
 CLIENT_ID         = os.getenv("CLIENT_ID")
