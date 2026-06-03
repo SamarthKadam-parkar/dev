@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/orgapp/definition/orgAppDefinition/1.0.0/schema.json",
+  "settings": {
+    "experienceSettings": {
+      "navigationPane": {
+        "isHidden": true,
+        "isCollapsed": false,
+        "independentPageNavigation": false
+      }
+    }
+  },
+  "elements": [
+    {
+      "elementType": "item",
+      "elementId": "6169d12e-666c-4b25-b5ea-d34f98c5f98d",
+      "itemType": "Report",
+      "itemLogicalId": "52acf1ba-6e72-8a2c-4ac0-467e5c0fe853",
+      "displayName": "products_report"
+    },
+    {
+      "elementType": "item",
+      "elementId": "cf548782-6fed-4464-876f-442b7d8d9e5a",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "61972465-799f-8c84-4073-9ded0cfa4a79",
+      "displayName": "6169d12e-666c-4b25-b5ea-d34f98c5f98d"
+    }
+  ]
+}
