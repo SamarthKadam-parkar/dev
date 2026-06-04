@@ -1,13 +1,9 @@
 {
     "item_type_in_scope": [
-        "DataPipeline",
         "Notebook"
     ],
     "items_in_scope": [
-        "Pipeline_1.DataPipeline",
-        "bronze_customers.Notebook",
-        "dq.Notebook",
-        "gold_products.Notebook",
-        "silver_customers.Notebook"
+        "DQ Validations (1).Notebook",
+        "gold_sales.Notebook"
     ]
 }
