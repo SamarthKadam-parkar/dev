@@ -1,13 +1,13 @@
 {
     "item_type_in_scope": [
-        "Notebook",
-        "Report",
-        "SemanticModel",
-        "GraphQLApi",
-        "Environment",
-        "DataPipeline"
+        "DataPipeline",
+        "Notebook"
     ],
     "items_in_scope": [
-        "dq.Notebook"
+        "Pipeline_1.DataPipeline",
+        "bronze_customers.Notebook",
+        "dq.Notebook",
+        "gold_products.Notebook",
+        "silver_customers.Notebook"
     ]
 }
