@@ -1,11 +1,3294 @@
 --- LOCAL COMMIT HISTORY ---
-SHA: 3bf67dd1fc2c93a9bca4d5cfd87e0ee0b574d99f | Author: SamarthKadam-parkar | Msg: Merge branch 'dev' into feature_skadam | Time: 2026-06-03 13:03:30+05:30
-SHA: 3575add79ee7928e6388e357b90e4de51d2e3acb | Author: SamarthKadam-parkar | Msg: Deploying newly created gold_customers notebook | Time: 2026-06-03 13:02:02+05:30
-SHA: eca56eb1ba2aeb0581a10efe9fc951bb665a2721 | Author: SamarthKadam-parkar | Msg: Merge branch 'feature_skadam' of https://github.com/SamarthKadam-parkar/dev into feature_skadam | Time: 2026-06-03 12:59:38+05:30
-SHA: 4b1fc3e6e922c96d6db2263eb8845f0104524550 | Author: SamarthKadam-parkar | Msg: nc | Time: 2026-06-03 12:59:22+05:30
-SHA: 56e95c1bfe2c315ae36a33c63972ef6c10d98b13 | Author: SamarthKadam-parkar | Msg: Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3 | Time: 2026-06-03 12:58:43+05:30
-SHA: d74530b4f47fd36bc4d636d5a7f6ddebc8ee711d | Author: SamarthKadam-parkar | Msg: Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3 | Time: 2026-06-03 09:56:38+05:30
-SHA: 93520a1f1591fdd1db398d80b88b6a7d79fae633 | Author: SamarthKadam-parkar | Msg: nc | Time: 2026-06-03 09:52:42+05:30
-SHA: 28979bed5ee97daf5f4c9c11e617a09abf52701a | Author: SamarthKadam-parkar | Msg: updated fabric_menu UI and bug fixes | Time: 2026-06-03 09:49:02+05:30
-SHA: e1f2f242ecdf90fb559b22136676ddac7c4921ac | Author: SamarthKadam-parkar | Msg: Deployed 1 item(s) to test | Time: 2026-06-03 09:47:48+05:30
-SHA: d4547f8d2c09ada218d15aeb8364bec01d563549 | Author: SamarthKadam-parkar | Msg: Merge branch 'feature_skadam' of https://github.com/SamarthKadam-parkar/dev into feature_skadam | Time: 2026-06-03 09:45:45+05:30
+SHA: fa09a4f5f7f97225521d4c5ba558b1690853ca6a | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "fa09a4f5f7f97225521d4c5ba558b1690853ca6a">> | Msg: sdutkfjfjjuytrydv eyj | Time: 2026-06-04 15:51:40+05:30
+SHA: 47729f8faa0d6bf4e5d7c7884d8bc0627d4b13fa | Author: ron9900 | Diff: <bound method Diffable.diff of <git.Commit "47729f8faa0d6bf4e5d7c7884d8bc0627d4b13fa">> | Msg: Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3 | Time: 2026-06-04 15:49:50+05:30
+SHA: 55d4df2c3a74a6a512f5a496c53590273a7ca90f | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "55d4df2c3a74a6a512f5a496c53590273a7ca90f">> | Msg: Merge branch 'dev' into feature_skadam | Time: 2026-06-04 13:19:25+05:30
+SHA: b3daa8a1468e2e0f51f7987fcce23665e6a5ea52 | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "b3daa8a1468e2e0f51f7987fcce23665e6a5ea52">> | Msg: Deployed 9 item(s) to test | Time: 2026-06-04 13:11:19+05:30
+SHA: 63b09a7d8c5a63c73b86afc36bae222916a14b51 | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "63b09a7d8c5a63c73b86afc36bae222916a14b51">> | Msg: Merge branch 'feature_skadam' of https://github.com/SamarthKadam-parkar/dev into feature_skadam | Time: 2026-06-03 19:34:34+05:30
+SHA: 19729d5c9db44415968303a987b5742b1b9a2804 | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "19729d5c9db44415968303a987b5742b1b9a2804">> | Msg: nc | Time: 2026-06-03 19:33:58+05:30
+SHA: 282ea4bab5945d8a029646e0db672e109aab5b16 | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "282ea4bab5945d8a029646e0db672e109aab5b16">> | Msg: Feature skadam (#137)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* nc
+
+* nc
+
+* nc
+
+* nc
+
+* format updated
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added prod creds
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* nc
+
+* fixed test bronze onelake id
+
+* nc
+
+* nc
+
+* nc
+
+* nc
+
+* replaced all connection names with connection IDs
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* updated yml file from feature_Nikita branch
+
+* commented airflow job and API graphQL
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* added selective deployment logic
+
+* added selective deployment logic
+
+* remove dotenv for git
+
+* deployment_1.6.26
+
+* nc
+
+* Dev (#126)
+
+* Dev (#105)
+
+* Feature skadam (#51)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#52)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#53)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#54)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#55)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* Feature skadam (#56)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Feature skadam (#57)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#58)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* Feature skadam (#59)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* Feature skadam (#60)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* Feature skadam (#61)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* Update parameter.yml (#62)
+
+* Feature skadam (#63)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* Feature skadam (#64)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* Feature skadam (#65)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* Feature skadam (#66)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml file logic
+
+* nc
+
+* Feature skadam (#68)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* Feature skadam (#69)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* Feature skadam (#70)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* Feature skadam (#71)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* Feature skadam (#72)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* Feature skadam (#73)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* Feature skadam (#74)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* Feature skadam (#75)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* Feature skadam (#76)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* Feature skadam (#77)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* Feature skadam (#78)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* Feature skadam (#79)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Feature skadam (#80)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#81)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#83)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* Feature skadam (#84)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* Feature skadam (#85)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* Feature skadam (#91)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* fixed
+
+* Feature skadam (#92)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* Feature skadam (#93)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Feature skadam (#94)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Feature skadam (#95)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Feature skadam (#96)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Feature skadam (#97)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* nc
+
+* Feature skadam (#98)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* silver_sales lakehouses removed
+
+* removed lakehouse metadata for brinze notebook
+
+* Committing 1 item from workspace d69c1321-f83e-4b0f-86f7-5b06be4bff06
+
+* defined parameter.yml
+
+* hotfix_1 for parameter.yml
+
+* scrapped parameter.yml
+
+* removed "lakehouses" as items_in_scope to deploy
+in target workspaces
+
+* Committing 2 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added parameter.yml for semantic model
+
+* edited connection id var
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* changed name for semantic model
+
+* changed parameter cred
+
+* nc
+
+* nc
+
+* updated parameter.yml connection ID fix
+
+* nc
+
+* updated parameter.yml
+
+* updated parameter.yml
+
+* fixed parameter.yml
+
+* updated prameter.yml
+
+* nc
+
+* added test guid
+
+* nc
+
+* fixed semantic model name
+
+* added dev and test
+
+* nc
+
+* nc
+
+* nc
+
+* implemented publishing only the changed items
+
+* removed dotenv
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* fix_1
+
+* nc
+
+* added new logic
+
+* added prod logic
+
+* nc
+
+* Committing 3 items from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* nc
+
+* nc
+
+* nc
+
+* Feature skadam (#99)
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f…
+
+* Deployed ['bronze_customers.Notebook', 'gold_products.Notebook', 'products.Notebook']
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Deployed ['gold_products.Notebook', 'silver_products.Notebook']
+
+* error log
+
+* Deployed ['products_report.SemanticModel']
+
+* Deployed ['Pipeline_1.DataPipeline', 'gold_products.Notebook', 'products.Notebook']
+
+* Deployed ['bronze_customers.Notebook', 'gold_products.Notebook', 'products.Notebook', 'silver_products.Notebook']
+
+* Deployed 2 item(s) to test
+
+* fixed get_changed_item git ref
+
+* Deployment 02.06.2026
+
+* Deployed 4 item(s) to prod
+
+* Deployed 4 item(s) to test
+
+* Deployed 4 item(s) to test
+
+* nc
+
+* nc
+
+* nc
+
+* feature 03_06_2026
+
+* nc
+
+* Deployed 1 item(s) to test
+
+* updated fabric_menu UI and bug fixes
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* Deploying newly created gold_customers notebook
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* added contributions logic
+
+* Deploying OrgApp from dev to test
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* deploying gold notebook to feat
+
+* Deployed 1 item(s) to test
+
+* nc
+
+* Committing 1 item from workspace fd090d74-08b5-4348-89a8-15d1280f84b3
+
+* nc
+
+* bronze notebook changed
+
+---------
+
+Co-authored-by: NIKITA DAMBHARE <42292907+Nikita-dambhare@users.noreply.github.com> | Time: 2026-06-03 19:31:48+05:30
+SHA: ef803315bac545b2b00286ea4441ea9174b604e2 | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "ef803315bac545b2b00286ea4441ea9174b604e2">> | Msg: Merge branch 'dev' into feature_skadam | Time: 2026-06-03 19:30:59+05:30
+SHA: c460b6488a82ba2e7fc88a9affd840086fdfe82a | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "c460b6488a82ba2e7fc88a9affd840086fdfe82a">> | Msg: bronze notebook changed | Time: 2026-06-03 19:29:01+05:30
+SHA: aaf59fd746812d9cf36ff6fb5421c727a351def5 | Author: SamarthKadam-parkar | Diff: <bound method Diffable.diff of <git.Commit "aaf59fd746812d9cf36ff6fb5421c727a351def5">> | Msg: Merge branch 'feature_skadam' of https://github.com/SamarthKadam-parkar/dev into feature_skadam | Time: 2026-06-03 19:26:49+05:30
