@@ -8,14 +8,6 @@
         "DataPipeline"
     ],
     "items_in_scope": [
-        "GraphQL_1.GraphQLApi",
-        "Pipeline_1.DataPipeline",
-        "bronze_customers.Notebook",
-        "environment_1.Environment",
-        "gold_customers.Notebook",
-        "gold_products.Notebook",
-        "products.Notebook",
-        "products_report.Report",
-        "products_report.SemanticModel"
+        "dq.Notebook"
     ]
 }

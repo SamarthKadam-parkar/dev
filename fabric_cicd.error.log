@@ -1,7 +1,7 @@
-2026-06-04 12:57:49,167 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
-2026-06-04 12:57:49,315 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-04 12:57:49,315 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-04 12:57:49,315 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
-2026-06-04 12:57:49,315 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
-2026-06-04 12:57:49,315 - INFO - fabric_cicd.fabric_workspace - 
-2026-06-04 12:57:49,334 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
+2026-06-04 15:51:12,540 - INFO - fabric_cicd._common._validate_input - Relative directory path '.' resolved as 'C:\Users\samarth.kadam\dev'
+2026-06-04 15:51:12,637 - INFO - fabric_cicd.fabric_workspace - 
+2026-06-04 15:51:12,637 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-06-04 15:51:12,637 - INFO - fabric_cicd.fabric_workspace - [32m[1m########## Validating Parameter File ###############################################################[0m
+2026-06-04 15:51:12,637 - INFO - fabric_cicd.fabric_workspace - [32m[1m####################################################################################################[0m
+2026-06-04 15:51:12,637 - INFO - fabric_cicd.fabric_workspace - 
+2026-06-04 15:51:12,646 - INFO - fabric_cicd._parameter._parameter - Parameter file validation passed
