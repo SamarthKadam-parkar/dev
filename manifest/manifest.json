@@ -1,6 +1,11 @@
 {
     "item_type_in_scope": [
-        "Notebook"
+        "Notebook",
+        "Report",
+        "SemanticModel",
+        "GraphQLApi",
+        "Environment",
+        "DataPipeline"
     ],
     "items_in_scope": [
         "dq.Notebook"
