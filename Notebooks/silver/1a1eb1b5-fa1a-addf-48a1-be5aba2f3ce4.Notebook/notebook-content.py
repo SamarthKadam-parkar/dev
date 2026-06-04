@@ -11,47 +11,6 @@
 
 # CELL ********************
 
-# DQ reports for data validation and testing
-# getting counts for each and storing results in table/csv
-
-# Import required libraries
-
-# Import Required Libraries
-
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import (
-    col,
-    trim,
-    when,
-    count,
-    current_date,
-    max as max_,
-    lit,
-    current_timestamp
-)
-
-from pyspark.sql.types import (
-    StringType,
-    IntegerType,
-    LongType,
-    DoubleType,
-    FloatType,
-    DateType,
-    TimestampType
-)
-
-from datetime import datetime
-
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
 
 dev config: 
 AzureDataLakeStorage{"server":"onelake.dfs.fabric.microsoft.com","path":"/8d6b0cb1-52e3-4e5c-8a36-b47bf955cdbb/14f8a35a-5a98-4b9f-9d9a-b8c9302919c8/"}
