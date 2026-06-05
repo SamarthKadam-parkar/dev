@@ -42,20 +42,55 @@ FONT_MONO = ("Consolas", 9)
 # ── Backend helpers ───────────────────────────────────────────────────────────
 def scan_workspace_items(repo_path: Path) -> dict:
     items_by_type = {}
-    for folder in repo_path.rglob("*"):
-        if (folder.is_dir()
-                and not any(p.startswith(".") for p in folder.parts)
-                and "." in folder.name):
-            item_name, item_type = folder.name.rsplit(".", 1)
-            if 2 <= len(item_type) <= 25:
+    
+    # Locate all active configuration files across the workspace
+    for platform_file in repo_path.rglob(".platform"):
+        # Skip hidden files or files situated in hidden directories (like .git/)
+        if any(part.startswith(".") for part in platform_file.parts[:-1]):
+            continue
+            
+        if platform_file.is_file():
+            try:
+                with open(platform_file, "r", encoding="utf-8") as f:
+                    config = json.load(f)
+                    
+                # Extract properties directly from the internal metadata block
+                metadata = config.get("metadata", {})
+                item_name = metadata.get("displayName")
+                item_type = metadata.get("type")
+                
+                # Verifying that the essential metadata items do exist
+                if not item_name or not item_type:
+                    continue
+                    
+                # Format specific data keys
                 key = item_type.lower()
                 items_by_type.setdefault(key, {"display_type": item_type, "items": []})
-                full = f"{item_name}.{item_type}"
+                
+                # Reconstruct the "full" name property your Tkinter app expects (e.g., products.Notebook)
+                full_name = f"{item_name}.{item_type}"
+                
+                # Deduplicate by item_name inside the respective bucket
                 if not any(i["name"] == item_name for i in items_by_type[key]["items"]):
-                    items_by_type[key]["items"].append({"name": item_name, "full": full})
+                    items_by_type[key]["items"].append({
+                        "name": item_name, 
+                        "full": full_name,  # <--- Added back to fix the KeyError
+                        "type": item_type,
+                        "physical_folder": platform_file.parent.name,
+                        "logical_id": config.get("config", {}).get("logicalId")
+                    })
+                    
+            except (json.JSONDecodeError, KeyError, IOError):
+                # Skip over locked or malformed system files safely
+                continue
+                
+    # Sort items lexicographically inside each type array
     for key in items_by_type:
         items_by_type[key]["items"].sort(key=lambda x: x["name"])
+        
     return items_by_type
+
+
 
 def save_manifest(items_in_scope: list) -> None:
     item_types = list({i.split(".")[1] for i in items_in_scope})
