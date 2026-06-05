@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from pathlib import Path
 from dotenv import load_dotenv
-from fabric_cicd import FabricWorkspace
+from fabric_cicd import FabricWorkspace, get_changed_items
 from azure.identity import ClientSecretCredential
 from git import Repo
 
@@ -42,20 +42,55 @@ FONT_MONO = ("Consolas", 9)
 # ── Backend helpers ───────────────────────────────────────────────────────────
 def scan_workspace_items(repo_path: Path) -> dict:
     items_by_type = {}
-    for folder in repo_path.rglob("*"):
-        if (folder.is_dir()
-                and not any(p.startswith(".") for p in folder.parts)
-                and "." in folder.name):
-            item_name, item_type = folder.name.rsplit(".", 1)
-            if 2 <= len(item_type) <= 25:
+    
+    # Locate all active configuration files across the workspace
+    for platform_file in repo_path.rglob(".platform"):
+        # Skip hidden files or files situated in hidden directories (like .git/)
+        if any(part.startswith(".") for part in platform_file.parts[:-1]):
+            continue
+            
+        if platform_file.is_file():
+            try:
+                with open(platform_file, "r", encoding="utf-8") as f:
+                    config = json.load(f)
+                    
+                # Extract properties directly from the internal metadata block
+                metadata = config.get("metadata", {})
+                item_name = metadata.get("displayName")
+                item_type = metadata.get("type")
+                
+                # Verifying that the essential metadata items do exist
+                if not item_name or not item_type:
+                    continue
+                    
+                # Format specific data keys
                 key = item_type.lower()
                 items_by_type.setdefault(key, {"display_type": item_type, "items": []})
-                full = f"{item_name}.{item_type}"
+                
+                # Reconstruct the "full" name property your Tkinter app expects (e.g., products.Notebook)
+                full_name = f"{item_name}.{item_type}"
+                
+                # Deduplicate by item_name inside the respective bucket
                 if not any(i["name"] == item_name for i in items_by_type[key]["items"]):
-                    items_by_type[key]["items"].append({"name": item_name, "full": full})
+                    items_by_type[key]["items"].append({
+                        "name": item_name, 
+                        "full": full_name,  # <--- Added back to fix the KeyError
+                        "type": item_type,
+                        "physical_folder": platform_file.parent.name,
+                        "logical_id": config.get("config", {}).get("logicalId")
+                    })
+                    
+            except (json.JSONDecodeError, KeyError, IOError):
+                # Skip over locked or malformed system files safely
+                continue
+                
+    # Sort items lexicographically inside each type array
     for key in items_by_type:
         items_by_type[key]["items"].sort(key=lambda x: x["name"])
+        
     return items_by_type
+
+
 
 def save_manifest(items_in_scope: list) -> None:
     item_types = list({i.split(".")[1] for i in items_in_scope})
@@ -75,35 +110,35 @@ def git_commit_and_push(commit_message: str) -> str:
     except Exception as e:
         return f"Git error: {e}"
 
-def get_changed_items_vs_dev(repo_path: Path, known_items: set) -> list:
-    """
-    Returns Fabric items changed in the current branch vs origin/dev,
-    filtered strictly against known Fabric item folders scanned from the repo.
+# def get_changed_items_vs_dev(repo_path: Path, known_items: set) -> list:
+#     """
+#     Returns Fabric items changed in the current branch vs origin/dev,
+#     filtered strictly against known Fabric item folders scanned from the repo.
 
-    Each changed file lives inside a Fabric item folder, e.g.:
-        MyReport.Report/report.json   ->  first component = MyReport.Report
-        MyModel.SemanticModel/item.bim -> first component = MyModel.SemanticModel
+#     Each changed file lives inside a Fabric item folder, e.g.:
+#         MyReport.Report/report.json   ->  first component = MyReport.Report
+#         MyModel.SemanticModel/item.bim -> first component = MyModel.SemanticModel
 
-    By checking only the first path component against known_items we avoid
-    matching arbitrary dotted files like config.json or README.md.
-    """
-    repo = Repo(str(repo_path))
-    try:
-        repo.remotes.origin.fetch()
-    except Exception:
-        pass  # use cached remote refs if fetch fails
+#     By checking only the first path component against known_items we avoid
+#     matching arbitrary dotted files like config.json or README.md.
+#     """
+#     repo = Repo(str(repo_path))
+#     try:
+#         repo.remotes.origin.fetch()
+#     except Exception:
+#         pass  # use cached remote refs if fetch fails
 
-    diff_output = repo.git.diff("origin/dev..HEAD", "--name-only", "--diff-filter=ACMR")
-    if not diff_output.strip():
-        return []
+#     diff_output = repo.git.diff("origin/dev", "--name-only", "--diff-filter=ACMR")
+#     if not diff_output.strip():
+#         return []
 
-    changed = set()
-    for file_path in diff_output.strip().split("\n"):
-        parts = Path(file_path).parts
-        if parts and parts[0] in known_items:
-            changed.add(parts[0])
+#     changed = set()
+#     for file_path in diff_output.strip().split("\n"):
+#         parts = Path(file_path).parts
+#         if parts and parts[0] in known_items:
+#             changed.add(parts[0])
 
-    return sorted(changed)
+#     return sorted(changed)
 
 def build_workspace(workspace_id: str, env: str) -> FabricWorkspace:
     return FabricWorkspace(
@@ -279,7 +314,7 @@ class FabricDeployUI(tk.Tk):
                 for data in self.items_by_type.values()
                 for item in data["items"]
             }
-            self.changed_items = get_changed_items_vs_dev(REPO_PATH, known_items)
+            self.changed_items = get_changed_items(self.target_workspace.repository_directory,git_compare_ref="dev")
             if self.changed_items:
                 preview = ", ".join(self.changed_items[:4])
                 extra   = f"  +{len(self.changed_items)-4} more" if len(self.changed_items) > 4 else ""
@@ -549,26 +584,25 @@ class FabricDeployUI(tk.Tk):
         bf.pack(fill="x")
 
         def confirm():
-            scope = sorted(self.items_in_scope)
-            types = sorted({i.split(".")[1] for i in scope})
-            status_lbl.config(text="Saving manifest...", fg=FG_LIGHT); win.update()
-            try:
-                save_manifest(scope)
-                status_lbl.config(text="✓ Manifest saved. Pushing...", fg=PRIMARY); win.update()
-                git_msg = git_commit_and_push(commit_var.get())
-                status_lbl.config(text=f"✓ {git_msg}", fg=PRIMARY); win.update()
-            except Exception as e:
-                status_lbl.config(text=f"Error: {e}", fg=DANGER)
-                return
-            self.result = (types, scope)
-            messagebox.showinfo("Deployment Complete",
-                f"✓ {len(scope)} item(s) deployed to {env.capitalize()} Workspace.\n\n{git_msg}")
-            win.destroy()
-
+           scope = sorted(self.items_in_scope)
+           types = sorted({i.split(".")[1] for i in scope})
+           status_lbl.config(text="Saving manifest...", fg=FG_LIGHT); win.update()
+           try:
+               save_manifest(scope)
+               status_lbl.config(text="✓ Manifest saved. Pushing...", fg=PRIMARY); win.update()
+               git_msg = git_commit_and_push(commit_var.get())
+               status_lbl.config(text=f"✓ {git_msg}", fg=PRIMARY); win.update()
+           except Exception as e:
+               status_lbl.config(text=f"Error: {e}", fg=DANGER)
+               return
+           self.result = (types, scope)
+           messagebox.showinfo("Deployment Complete",
+               f"✓ {len(scope)} item(s) deployed to {env.capitalize()} Workspace.\n\n{git_msg}")
+           win.destroy()
         ttk.Button(bf, text="✓  Confirm & Deploy", style="Primary.TButton",
-                   command=confirm).pack(side="right", padx=(8, 0))
+                  command=confirm).pack(side="right", padx=(8, 0))
         ttk.Button(bf, text="Cancel", style="TButton",
-                   command=win.destroy).pack(side="right")
+                  command=win.destroy).pack(side="right")
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────

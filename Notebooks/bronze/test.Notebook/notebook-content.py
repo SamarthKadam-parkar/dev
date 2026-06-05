@@ -11,12 +11,11 @@
 
 # MARKDOWN ********************
 
-# ## **Gold Customers -> customer information table** 
-
+# Test Notebook 
 
 # CELL ********************
 
-print("Creating gold table for customer data")
+from pyspark.sql import functions as F
 
 # METADATA ********************
 
@@ -24,7 +23,3 @@ print("Creating gold table for customer data")
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
-
-# MARKDOWN ********************
-
-# test 

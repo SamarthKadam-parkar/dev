@@ -11,12 +11,12 @@
 
 # MARKDOWN ********************
 
-# ## **Gold Customers -> customer information table** 
+# Gold sales
 
 
 # CELL ********************
 
-print("Creating gold table for customer data")
+print("hello")
 
 # METADATA ********************
 
@@ -24,7 +24,3 @@ print("Creating gold table for customer data")
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
-
-# MARKDOWN ********************
-
-# test 
