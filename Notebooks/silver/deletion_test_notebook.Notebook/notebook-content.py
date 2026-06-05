@@ -11,7 +11,7 @@
 
 # MARKDOWN ********************
 
-# New notebook created in dev-> notebooks -> silver
+# deletion_test_notebook created in dev workspace 
 
 # CELL ********************
 
